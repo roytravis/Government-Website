@@ -1,0 +1,393 @@
+/* ================================================================ */
+/* FILE CSS UTAMA - VERSI LENGKAP, UTUH, DAN FINAL                  */
+/* Tanggal Pembaruan: 11 Juli 2025                                  */
+/* Menggabungkan semua gaya untuk seluruh aplikasi.                 */
+/* ================================================================ */
+
+/* === FONT & DASAR GLOBAL === */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #f4f7f6;
+  color: #444;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+h1, h2 {
+  color: #2c3e50;
+  font-weight: 700;
+}
+
+/* === LAYOUT CONTAINER UTAMA === */
+.container {
+  max-width: 950px;
+  width: 95%;
+  padding: 32px 20px;
+  margin: 20px auto;
+  background-color: white;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  border-radius: 12px;
+}
+
+/* === HEADER & NAVIGASI (DARI header-dinamis.php) === */
+.header-selebaran {
+  background-color: white;
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #e9ecef;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  flex-wrap: wrap;
+}
+.logo-selebaran img {
+  max-height: 50px;
+  display: block;
+}
+.menu-selebaran {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+.menu-selebaran ul {
+  list-style: none;
+}
+.menu-selebaran ul#menuDinamisToko {
+  display: flex;
+}
+.menu-selebaran ul#menuDinamisToko > li {
+  margin-left: 20px;
+  position: relative;
+}
+.menu-selebaran ul#menuDinamisToko a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  display: block;
+  padding: 10px;
+}
+.menu-selebaran .menu-item-has-children > a::after {
+  content: "▼";
+  font-size: 0.7em;
+  margin-left: 5px;
+}
+.hamburger-icon {
+  display: none; /* Sembunyi di desktop */
+  margin-left: auto;
+}
+
+/* Submenu di Desktop */
+.menu-selebaran ul#menuDinamisToko ul.submenu {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: #fff;
+  border: 1px solid #eee;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+  min-width: 200px;
+  z-index: 1001;
+}
+.menu-selebaran ul#menuDinamisToko > li:hover > ul.submenu {
+  display: block;
+}
+.menu-selebaran ul#menuDinamisToko ul.submenu li {
+  width: 100%;
+  margin-left: 0;
+}
+.menu-selebaran ul#menuDinamisToko ul.submenu li a {
+  padding: 10px 15px;
+  font-weight: normal;
+  white-space: nowrap;
+}
+.menu-selebaran ul#menuDinamisToko ul.submenu li a:hover {
+  background-color: #f0f0f0;
+}
+
+
+/* === TOMBOL & AKSI === */
+/* PENAMBAHAN .btn-danger pada selector */
+.btn, .btn-primary, .btn-secondary, .btn-success, .btn-danger {
+    display: inline-block;
+    font-weight: 600;
+    border-radius: 8px;
+    border: none;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    color: #fff;
+}
+.btn-primary { background: #1877f2; }
+.btn-primary:hover { background: #166fe5; transform: translateY(-1px); }
+.btn-secondary { background: #6c757d; }
+.btn-secondary:hover { background: #5a6268; transform: translateY(-1px); }
+.btn-success { background-color: #28a745; }
+.btn-success:hover { background-color: #218838; transform: translateY(-1px); }
+/* KELAS BARU untuk tombol logout/danger */
+.btn-danger { background-color: #dc3545; }
+.btn-danger:hover { background-color: #c82333; transform: translateY(-1px); }
+
+
+.tombol-lihat, .tombol-edit, .tombol-hapus {
+    text-decoration: none;
+    color: white;
+    padding: 7px 14px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    display: inline-block;
+    border: none;
+    transition: opacity 0.2s;
+}
+.tombol-lihat:hover, .tombol-edit:hover, .tombol-hapus:hover { opacity: 0.85; }
+.tombol-lihat { background-color: #17a2b8; }
+.tombol-edit { background-color: #ffc107; }
+.tombol-hapus { background-color: #dc3545; }
+
+
+/* === STATUS BADGE === */
+.status-badge {
+    padding: 6px 14px;
+    border-radius: 9999px;
+    font-size: 12px;
+    font-weight: 600;
+    display: inline-block;
+    white-space: nowrap;
+    text-transform: capitalize;
+}
+.status-verified { background-color: #e6f4ea; color: #34a853; }
+.status-revision { background-color: #fce8e6; color: #ea4335; }
+.status-pending { background-color: #fff8e1; color: #f9ab00; }
+
+
+/* === NOTIFIKASI (ALERT) === */
+.alert {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  font-weight: 500;
+}
+.alert-sukses { color: #155724; background-color: #d4edda; border-color: #c3e6cb; }
+.alert-gagal { color: #721c24; background-color: #f8d7da; border-color: #f5c6cb; }
+
+
+/* === FORMULIR (UNTUK input & edit) === */
+.form-group { margin-bottom: 18px; }
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #555;
+}
+.form-group input[type="text"],
+.form-group input[type="date"],
+.form-group input[type="number"],
+.form-group input[type="password"],
+.form-group input[type="file"],
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1em;
+  font-family: "Poppins", sans-serif;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #1877f2;
+  box-shadow: 0 0 0 3px rgba(24, 119, 242, 0.2);
+}
+.radio-inline-group {
+  display: flex;
+  gap: 24px;
+  margin-top: 5px;
+}
+
+/* === HALAMAN DAFTAR BANGUNAN (TAMPILAN DESKTOP) === */
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+}
+.table-styled {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+}
+.table-styled th, .table-styled td {
+  padding: 16px;
+  text-align: left;
+  border-bottom: 1px solid #e9ecef;
+  vertical-align: middle;
+}
+.table-styled thead th {
+  background-color: #f8f9fa;
+  color: #495057;
+  font-weight: 600;
+  font-size: 0.9em;
+  text-transform: uppercase;
+}
+.table-styled tbody tr:hover {
+  background-color: #f1f3f5;
+}
+td.kolom-aksi {
+    white-space: nowrap;
+}
+
+
+/* === GAYA HALAMAN LOGIN === */
+.container.login-container {
+  max-width: 450px;
+  margin-top: 50px;
+}
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+/* === GAYA HALAMAN PUBLIK (index.php) === */
+.grafik-area {
+  padding: 24px;
+  margin-bottom: 24px;
+  border: 1px solid #e9ecef;
+  border-radius: 12px;
+}
+.grafik-flex {
+  display: flex;
+  gap: 32px;
+}
+.grafik-kiri, .grafik-kanan {
+  flex: 1;
+  text-align: center;
+}
+
+
+/* ================================================================ */
+/* === MEDIA QUERIES UNTUK TAMPILAN RESPONSIVE (MOBILE)         === */
+/* ================================================================ */
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 24px 16px;
+  }
+
+  /* --- Header & Navigasi Mobile --- */
+  .header-selebaran { justify-content: space-between; }
+  .menu-selebaran {
+    order: 3;
+    flex-basis: 100%;
+    justify-content: flex-start;
+  }
+  .hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1002;
+  }
+  .hamburger-icon span {
+    display: block; width: 100%; height: 3px; background-color: #333;
+    border-radius: 3px; transition: all 0.3s ease-in-out;
+  }
+  .hamburger-icon.open span:nth-child(1) { transform: translateY(11px) rotate(45deg); }
+  .hamburger-icon.open span:nth-child(2) { opacity: 0; }
+  .hamburger-icon.open span:nth-child(3) { transform: translateY(-11px) rotate(-45deg); }
+  
+  .menu-selebaran ul#menuDinamisToko {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+  .menu-selebaran ul#menuDinamisToko.active { display: flex; }
+  .menu-selebaran ul#menuDinamisToko > li { width: 100%; margin-left: 0; }
+  .menu-selebaran ul#menuDinamisToko a { padding: 15px 0; border-bottom: 1px solid #eee; }
+  .menu-selebaran ul#menuDinamisToko ul.submenu {
+    display: block; position: static; background-color: #f8f8f8;
+    border: none; box-shadow: none; padding-left: 20px; max-height: 0;
+    overflow: hidden; transition: max-height 0.3s ease-in-out;
+  }
+  .menu-selebaran ul#menuDinamisToko ul.submenu.submenu-terbuka { max-height: 1000px; }
+
+
+  /* --- Halaman Daftar Bangunan Mobile (Layout Kartu) --- */
+  .page-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .page-header h2 { text-align: center; }
+  .page-header .btn { width: 100%; text-align: center; }
+
+  .table-styled thead { display: none; }
+  .table-styled tr {
+    display: block;
+    background-color: #ffffff;
+    border: 1px solid #e9ecef;
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 16px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  }
+  .table-styled td {
+    display: block; border: none; padding: 8px 0;
+    text-align: right; position: relative;
+  }
+  .table-styled td:last-child { border-bottom: none; padding-bottom: 0; }
+  .table-styled td:first-child { padding-top: 0; }
+  .table-styled td[data-label="No."] { display: none; }
+  .table-styled td::before {
+    content: attr(data-label);
+    position: absolute; left: 0; font-weight: 600;
+    color: #555; text-align: left; white-space: nowrap;
+  }
+  .table-styled td[data-label="Nama Bangunan"] {
+      text-align: left; padding: 0; margin-bottom: 12px;
+      font-size: 1.1em; font-weight: 600; color: #2c3e50;
+  }
+  .table-styled td[data-label="Nama Bangunan"]::before { display: none; }
+  .table-styled td[data-label="Aksi"] {
+      padding-top: 16px; margin-top: 12px;
+      border-top: 1px solid #f0f0f0; text-align: right;
+  }
+  .table-styled td[data-label="Aksi"]::before { display: none; }
+  .kolom-aksi a { display: inline-block; margin: 0 0 0 8px; }
+
+  /* --- Halaman Publik Mobile --- */
+  .grafik-flex { flex-direction: column; }
+}
