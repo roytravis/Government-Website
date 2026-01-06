@@ -1,0 +1,1840 @@
+# Translation of Plugins - Really Simple Security &#8211; Simple and Performant Security (formerly Really Simple SSL) - Stable (latest release) in Indonesian
+# This file is distributed under the same license as the Plugins - Really Simple Security &#8211; Simple and Performant Security (formerly Really Simple SSL) - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2024-10-07 11:55:11+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: GlotPress/4.0.1\n"
+"Language: id\n"
+"Project-Id-Version: Plugins - Really Simple Security &#8211; Simple and Performant Security (formerly Really Simple SSL) - Stable (latest release)\n"
+
+#. Plugin Name of the plugin
+#. Author of the plugin
+#: rlrsssl-really-simple-ssl.php
+msgid "Really Simple Security"
+msgstr "Really Simple Security"
+
+#. Description of the plugin
+#: rlrsssl-really-simple-ssl.php upgrade/upgrade-to-pro.php:147
+msgid "Easily improve site security with WordPress Hardening, Two-Factor Authentication (2FA), Login Protection, Vulnerability Detection and SSL certificate generation."
+msgstr "Tingkatkan keamanan situs dengan mudah dengan WordPress Hardening, Two-Factor Authentication (2FA), Proteksi Login, Deteksi Kerentanan, dan pembuatan sertifikat SSL."
+
+#: settings/config/menu.php:332
+msgid "Here you can see which users have configured Two-Factor Authentication. The reset button will trigger the 2FA onboarding for the selected user(s) again and allow the configured grace period."
+msgstr "Di sini Anda dapat melihat pengguna mana yang telah mengonfigurasi Autentikasi Dua Faktor. Tombol atur ulang akan memicu lagi proses penerimaan 2FA untuk pengguna yang dipilih dan mengizinkan masa tenggang yang telah dikonfigurasi."
+
+#: settings/config/menu.php:322
+msgid "TOTP requires users to authenticate using a third-party app such as Google Authenticator."
+msgstr "TOTP mengharuskan pengguna untuk mengautentikasi menggunakan aplikasi pihak ketiga seperti Google Authenticator."
+
+#: settings/config/menu.php:321
+msgid "Authenticator App (TOTP)"
+msgstr "Aplikasi Autentikator (TOTP)"
+
+#: settings/config/menu.php:104
+msgid "Essential Security Headers"
+msgstr "Header Keamanan Penting"
+
+#: settings/config/fields/vulnerability-detection.php:64
+msgid "Really Simple Security dashboard"
+msgstr "Dasbor Really Simple Security"
+
+#: settings/config/fields/two-fa.php:76 settings/config/fields/two-fa.php:77
+#: settings/config/fields/two-fa.php:78
+msgid "%s days"
+msgstr "%s hari"
+
+#: settings/config/fields/two-fa.php:71
+msgid "Allow grace period"
+msgstr "Izinkan masa tenggang"
+
+#: settings/config/fields/security-headers.php:24
+msgid "About Essential Security Headers"
+msgstr "Tentang Header Keamanan Penting"
+
+#: security/wordpress/two-fa/traits/trait-rsssl-email-trait.php:145
+msgid "Compromised password reset"
+msgstr "Pengaturan ulang kata sandi yang dikompromikan"
+
+#: security/wordpress/two-fa/traits/trait-rsssl-email-trait.php:101
+msgid "Compromised password for %s has been reset"
+msgstr "Kata sandi yang dikompromikan untuk %s telah diatur ulang"
+
+#: security/wordpress/two-fa/traits/trait-rsssl-email-trait.php:28
+msgid "Your password was compromised and has been reset"
+msgstr "Kata sandi Anda yang dibobol dan telah diatur ulang"
+
+#: security/wordpress/two-fa/function-login-header.php:136
+msgid "Powered by WordPress"
+msgstr "Didukung oleh WordPress"
+
+#: security/wordpress/two-fa/function-login-header.php:133
+msgid "Usage of the title attribute on the login logo is not recommended for accessibility reasons. Use the link text instead."
+msgstr "Penggunaan atribut judul pada logo login tidak disarankan untuk alasan aksesibilitas. Sebagai gantinya, gunakan teks tautan."
+
+#: security/wordpress/two-fa/function-login-header.php:107
+msgid "https://wordpress.org/"
+msgstr "https://wordpress.org/"
+
+#. translators: %s: Login screen title.
+#: security/wordpress/two-fa/function-login-header.php:60
+msgid "Recovery Mode &#8212; %s"
+msgstr "Mode Pemulihan &#8212; %s"
+
+#. translators: Login screen title. 1: Login screen name, 2: Network or site
+#. name.
+#: security/wordpress/two-fa/function-login-header.php:56
+msgid "%1$s &lsaquo; %2$s &#8212; WordPress"
+msgstr "%1$s &lsaquo; %2$s &#8212; WordPress"
+
+#. translators: %1$s: user login, %2$s: site url, %3$s: password best practices
+#. link, %4$s: lost password url
+#: security/wordpress/two-fa/traits/trait-rsssl-email-trait.php:49
+msgid ""
+"Hello %1$s, an unusually high number of failed login attempts have been detected on your account at %2$s.\n"
+"\n"
+"These attempts successfully entered your password, and were only blocked because they failed to enter your second authentication factor. Despite not being able to access your account, this behavior indicates that the attackers have compromised your password. The most common reasons for this are that your password was easy to guess, or was reused on another site which has been compromised.\n"
+"\n"
+"To protect your account, your password has been reset, and you will need to create a new one. For advice on setting a strong password, please read %3$s\n"
+"\n"
+"To pick a new password, please visit %4$s\n"
+"\n"
+"This is an automated notification. If you would like to speak to a site administrator, please contact them directly."
+msgstr ""
+"Halo %1$s, telah terdeteksi jumlah percobaan masuk yang gagal dengan sangat tinggi pada akun Anda di %2$s.\n"
+"\n"
+"Upaya-upaya ini berhasil memasukkan kata sandi Anda, dan hanya diblokir karena gagal memasukkan faktor autentikasi kedua. Meskipun tidak dapat mengakses akun Anda, perilaku ini mengindikasikan bahwa penyerang telah membobol kata sandi Anda. Alasan yang paling umum untuk hal ini adalah karena kata sandi Anda mudah ditebak, atau telah digunakan kembali di situs lain yang telah disusupi.\n"
+"\n"
+"Untuk melindungi akun Anda, kata sandi Anda telah disetel ulang, dan Anda perlu membuat kata sandi baru. Untuk saran mengenai cara membuat kata sandi yang kuat, silakan baca %3$s\n"
+"\n"
+"Untuk memilih kata sandi baru, silakan kunjungi %4$s\n"
+"\n"
+"Ini adalah pemberitahuan otomatis. Jika Anda ingin berbicara dengan administrator situs, silakan hubungi mereka secara langsung."
+
+#. translators: %s: Site title.
+#: security/wordpress/two-fa/function-login-footer.php:31
+msgctxt "site"
+msgid "&larr; Go to %s"
+msgstr "&larr; Kunjungi %s"
+
+#: security/wordpress/two-fa/class-rsssl-two-factor.php:1249
+msgid "Password Reset"
+msgstr "Setel Ulang Kata Sandi"
+
+#: security/wordpress/two-fa/class-rsssl-two-factor.php:1242
+msgid "If you are the owner of this account, please check your email for instructions on regaining access."
+msgstr "Jika Anda adalah pemilik akun ini, silakan periksa email Anda untuk mendapatkan kembali akses."
+
+#: security/wordpress/two-fa/class-rsssl-two-factor.php:1238
+msgid "There have been too many failed two-factor authentication attempts, which often indicates that the password has been compromised. The password has been reset in order to protect the account."
+msgstr "Terlalu banyak upaya autentikasi dua faktor yang gagal, yang sering kali mengindikasikan bahwa kata sandi telah dibobol. Kata sandi telah diatur ulang untuk melindungi akun."
+
+#: security/wordpress/two-fa/class-rsssl-two-factor.php:1077
+msgid "Invalid verification code."
+msgstr "Kode verifikasi tidak valid."
+
+#. translators: %s: time delay between login attempts
+#: security/wordpress/two-fa/class-rsssl-two-factor.php:1015
+msgid "Too many invalid verification codes, you can try again in %s. This limit protects your account against automated attacks."
+msgstr "Terlalu banyak kode verifikasi yang tidak valid, Anda dapat mencoba lagi dalam %s. Batas ini melindungi akun Anda dari serangan otomatis."
+
+#. translators: %s: URL to reset password
+#: security/wordpress/two-fa/class-rsssl-two-factor.php:777
+msgid "Your password was reset because of too many failed Two Factor attempts. You will need to <a href=\"%s\">create a new password</a> to regain access. Please check your email for more information."
+msgstr "Kata sandi Anda diatur ulang karena terlalu banyak percobaan Dua Faktor yang gagal. Anda harus <a href=\"%s\">membuat kata sandi baru</a> untuk mendapatkan akses kembali. Silakan periksa email Anda untuk informasi lebih lanjut."
+
+#: settings/config/menu.php:510 settings/config/menu.php:604
+msgid "Continents"
+msgstr "Benua"
+
+#: settings/config/menu.php:498 settings/config/menu.php:518
+#: settings/config/menu.php:590 settings/config/menu.php:591
+msgid "Regions"
+msgstr "Wilayah"
+
+#: settings/config/menu.php:365
+msgid "Password security"
+msgstr "Keamanan kata sandi"
+
+#: settings/config/menu.php:482 settings/config/menu.php:692
+msgid "Warnings"
+msgstr "Peringatan"
+
+#: settings/config/menu.php:474 settings/config/menu.php:490
+msgid "Event Log"
+msgstr "Catatan Log"
+
+#: settings/config/menu.php:440 settings/config/menu.php:460
+msgid "IP Addresses"
+msgstr "Alamat IP"
+
+#: settings/config/menu.php:421 settings/config/menu.php:456
+msgid "Temporary block"
+msgstr "Blokir Sementara"
+
+#: settings/config/menu.php:413 settings/config/menu.php:448
+msgid "Permanent block"
+msgstr "Blokir Permanen"
+
+#: settings/config/menu.php:369
+msgid "Passwords"
+msgstr "Kata sandi"
+
+#: settings/config/menu.php:397
+msgid "Limit Attempts"
+msgstr "Batasi Percobaan"
+
+#: onboarding/class-onboarding.php:536 onboarding/class-onboarding.php:578
+#: settings/config/menu.php:376 settings/config/menu.php:384
+#: modal/build/index.d4bca8705bbc6e3e5777.js:1
+#: modal/src/components/DeactivationModal/DeactivationModal.js:96
+msgid "Limit Login Attempts"
+msgstr "Batasi Percobaan Login"
+
+#: settings/config/menu.php:359
+msgid "Password Security"
+msgstr "Keamanan Kata Sandi"
+
+#: settings/config/menu.php:273 modal/build/index.d4bca8705bbc6e3e5777.js:1
+#: modal/src/components/DeactivationModal/DeactivationModal.js:86
+msgid "Login Protection"
+msgstr "Perlindungan Login"
+
+#: settings/config/menu.php:245
+msgid "Advanced"
+msgstr "Tingkat lanjut"
+
+#: settings/config/menu.php:239
+msgid "Basic"
+msgstr "Dasar"
+
+#: settings/config/menu.php:69
+msgid "Let's Encrypt."
+msgstr "Let's Encrypt."
+
+#: settings/config/fields/access-control.php:61
+msgid "2 years"
+msgstr "2 tahun"
+
+#: settings/config/fields/access-control.php:60
+msgid "1 year"
+msgstr "1 tahun"
+
+#: settings/config/fields/access-control.php:59
+msgid "6 months"
+msgstr "6 bulan"
+
+#: settings/config/fields/access-control.php:63
+msgid "Change passwords every"
+msgstr "Ubah kata sandi setiap"
+
+#: settings/config/menu.php:55
+msgid "Why Premium Support?"
+msgstr "Mengapa Dukungan Premium?"
+
+#: settings/config/menu.php:261
+msgid "XML-RPC with Learning Mode"
+msgstr "XML-RPC dengan Mode Pembelajaran"
+
+#: settings/config/menu.php:76
+msgid "Redirection"
+msgstr "Pengalihan"
+
+#: onboarding/class-onboarding.php:289
+#: settings/build/995.7a0675fe0519b06656b3.js:1
+#: settings/src/Settings/Settings.js:153
+msgid "Save and continue"
+msgstr "Simpan dan lanjutkan"
+
+#: assets/templates/two_fa/onboarding.php:140
+#: settings/build/485.47f7474dc2a61c04262b.js:1
+#: settings/build/829.0d69f68a1345874307b1.js:1
+#: settings/src/Onboarding/OnboardingControls.js:201
+msgid "Skip"
+msgstr "Lewati"
+
+#: settings/config/fields/hardening-extended.php:95
+msgid "You have changed your login URL"
+msgstr "Anda telah mengubah URL login Anda"
+
+#: security/notices.php:94
+msgid "Rename admin user enabled: Please choose a new username of at least 3 characters, which is not in use yet."
+msgstr "Ubah nama pengguna admin diaktifkan: Mohon pilih nama pengguna baru sepanjang setidaknya 3 karakter yang belum digunakan."
+
+#: upgrade/upgrade-to-pro.php:425
+msgid "Could not rename folder!"
+msgstr "Tidak dapat mengubah nama folder!"
+
+#: settings/config/fields/hardening-basic.php:118
+msgid "Choose new username to replace 'admin'"
+msgstr "Pilih nama pengguna baru untuk mengganti 'admin'"
+
+#: settings/config/fields/general.php:88
+#: settings/build/485.47f7474dc2a61c04262b.js:1
+#: settings/src/Settings/Support.js:45
+msgid "Send"
+msgstr "Kirim"
+
+#: settings/config/menu.php:514 settings/config/menu.php:608
+#: settings/build/485.47f7474dc2a61c04262b.js:1
+#: settings/src/Settings/LearningMode/LearningMode.js:148
+msgid "Allowed"
+msgstr "Diizinkan"
+
+#: settings/config/menu.php:339 settings/config/menu.php:486
+#: settings/config/menu.php:651 settings/config/menu.php:688
+#: settings/build/485.47f7474dc2a61c04262b.js:1
+#: settings/src/Settings/DataTable/DataTableWrapper.js:151
+#: settings/src/Settings/EventLog/EventLogDataTable.js:213
+#: settings/src/Settings/firewall/UserAgentTable.js:257
+#: settings/src/Settings/GeoBlockList/BlockListDatatable.js:345
+#: settings/src/Settings/GeoBlockList/GeoDatatable.js:502
+#: settings/src/Settings/GeoBlockList/WhiteListDatatable.js:398
+#: settings/src/Settings/LearningMode/LearningMode.js:147
+#: settings/src/Settings/LearningMode/LearningMode.js:320
+#: settings/src/Settings/LimitLoginAttempts/CountryDatatable.js:435
+#: settings/src/Settings/LimitLoginAttempts/IpAddressDatatable.js:298
+msgid "All"
+msgstr "Semua"
+
+#: settings/config/fields/firewall.php:168
+#: settings/config/fields/firewall.php:213
+#: settings/config/fields/limit-login-attempts.php:139
+#: settings/config/fields/limit-login-attempts.php:184
+#: settings/config/fields/limit-login-attempts.php:230
+#: settings/config/menu.php:506 settings/config/menu.php:574
+#: settings/config/menu.php:600 settings/build/485.47f7474dc2a61c04262b.js:1
+#: settings/src/Settings/LearningMode/LearningMode.js:149
+msgid "Blocked"
+msgstr "Diblok"
+
+#: class-admin.php:665 settings/build/366.5ee9613565c0155c0f8e.js:1
+#: settings/build/485.47f7474dc2a61c04262b.js:1
+#: settings/build/829.0d69f68a1345874307b1.js:1
+#: settings/src/Dashboard/TaskElement.js:72
+#: settings/src/Dashboard/TaskElement.js:76
+#: settings/src/Settings/MixedContentScan/MixedContentScan.js:80
+msgid "View"
+msgstr "Lihat"
+
+#: settings/config/fields/firewall.php:248
+#: settings/config/fields/limit-login-attempts.php:160
+#: settings/config/fields/limit-login-attempts.php:206
+#: settings/config/fields/limit-login-attempts.php:266
+#: settings/config/fields/two-fa.php:179
+#: settings/build/366.5ee9613565c0155c0f8e.js:1
+#: settings/src/Dashboard/SslLabs/SslLabsHeader.js:5
+msgid "Status"
+msgstr "Status"
+
+#: settings/config/fields/security-headers.php:225
+msgid "Feature"
+msgstr "Fitur"
+
+#: settings/config/fields/security-headers.php:214
+#: settings/build/485.47f7474dc2a61c04262b.js:1
+#: settings/src/Settings/LearningMode/LearningMode.js:335
+#: settings/src/Settings/LearningMode/LearningMode.js:343
+#: settings/src/Settings/PermissionsPolicy.js:200
+msgid "Disable"
+msgstr "Nonaktifkan"
+
+#: settings/config/fields/encryption.php:107
+#: settings/config/fields/security-headers.php:386
+msgid "Location"
+msgstr "Lokasi"
+
+#: settings/config/fields/encryption.php:94
+msgid "Type"
+msgstr "Tipe"
+
+#: settings/config/fields/encryption.php:101
+#: settings/config/fields/vulnerability-detection.php:221
+msgid "Description"
+msgstr "Keterangan"
+
+#: settings/config/fields/security-headers.php:214
+#: settings/build/485.47f7474dc2a61c04262b.js:1
+#: settings/src/Settings/GeoBlockList/GeoDatatable.js:278
+#: settings/src/Settings/GeoBlockList/GeoDatatable.js:295
+#: settings/src/Settings/GeoBlockList/GeoDatatable.js:473
+#: settings/src/Settings/GeoBlockList/GeoDatatable.js:484
+#: settings/src/Settings/LearningMode/ChangeStatus.js:7
+#: settings/src/Settings/LearningMode/LearningMode.js:276
+#: settings/src/Settings/LimitLoginAttempts/CountryDatatable.js:310
+#: settings/src/Settings/LimitLoginAttempts/CountryDatatable.js:321
+#: settings/src/Settings/LimitLoginAttempts/CountryDatatable.js:330
+#: settings/src/Settings/LimitLoginAttempts/CountryDatatable.js:401
+#: settings/src/Settings/LimitLoginAttempts/CountryDatatable.js:412
+msgid "Allow"
+msgstr "Izinkan"
+
+#: settings/config/fields/hardening-xml.php:55
+msgid "Login status"
+msgstr "Status login"
+
+#: settings/config/fields/hardening-xml.php:61
+msgid "Count"
+msgstr "Hitung"
+
+#: settings/config/fields/hardening-xml.php:48
+#: settings/config/fields/two-fa.php:171
+msgid "Method"
+msgstr "Metode"
+
+#: settings/config/fields/hardening-extended.php:29
+msgid "Disable application passwords"
+msgstr "Nonaktifkan kata sandi aplikasi"
+
+#: settings/config/fields/hardening-extended.php:20
+msgid "Change debug.log file location"
+msgstr "Ubah lokasi berkas debug.log"
+
+#: settings/config/fields/hardening-basic.php:142
+msgid "Disable XML-RPC"
+msgstr "Nonaktifkan XML-RPC"
+
+#: settings/config/fields/hardening-extended.php:56
+msgid "Disable HTTP methods"
+msgstr "Nonaktifkan metode HTTP"
+
+#: settings/config/fields/hardening-extended.php:72
+msgid "Rename and randomize your database prefix"
+msgstr "Ubah nama dan acak prefix basis data Anda"
+
+#: lets-encrypt/config/fields.php:8 settings/config/fields/general.php:61
+#: settings/config/menu.php:717
+msgid "System status"
+msgstr "Sistem Status"
+
+#: settings/config/fields/hardening-basic.php:13
+msgid "Disable \"anyone can register\""
+msgstr "Nonaktifkan \"semua bisa mendaftar\""
+
+#: settings/config/fields/general.php:70
+msgid "Delete all data on plugin deletion"
+msgstr "Hapus semua data dalam penghapusan plugin"
+
+#: settings/config/fields/encryption.php:18
+msgid "301 PHP redirect"
+msgstr "pengalihan 301 PHP"
+
+#: settings/config/fields/security-headers.php:400
+msgid "Source"
+msgstr "Sumber"
+
+#: settings/config/fields/security-headers.php:347
+msgid "Add additional domains which can embed your website, if needed. Comma seperated."
+msgstr "Tambahkan domain tambahan yang dapat disematkan ke situs Anda, jika diperlukan. Pisahkan dengan koma."
+
+#: settings/config/fields/security-headers.php:338
+msgid "Allow your domain to be embedded"
+msgstr "Izinkan domain Anda untuk disematkan"
+
+#: settings/config/fields/security-headers.php:126
+msgid "Include subdomains"
+msgstr "Masukkan subdomain"
+
+#: settings/config/fields/security-headers.php:102
+msgid "After enabling this feature, you can submit your site to %shstspreload.org%s"
+msgstr "Setelah mengaktifkan fitur ini, Anda dapat mengirimkan situs Anda ke %shstspreload.org%s"
+
+#: settings/config/fields/security-headers.php:25
+msgid "These security headers are the fundamental security measures to protect your website visitors while visiting your website."
+msgstr "Header keamanan ini adalah standar keamanan mendasar untuk melindungi pengunjung situs Anda ketika mengunjungi situs Anda."
+
+#: settings/config/fields/hardening-basic.php:151
+msgid "Block user registrations when login and display name are the same"
+msgstr "Blokir pendaftaran pengguna ketika login dan tampilan namanya sama"
+
+#: settings/config/disable-fields-filter.php:28
+#: settings/config/fields/encryption.php:14
+#: settings/config/fields/encryption.php:23
+msgid "Redirect method"
+msgstr "Metode pangalihan"
+
+#: lets-encrypt/config/fields.php:21 settings/config/menu.php:740
+msgid "DNS verification"
+msgstr "Verifikasi DNS"
+
+#: settings/config/fields/security-headers.php:221
+msgid "Browser features are plentiful, but most are not needed on your website."
+msgstr "Banyak fitur browser, tapi kebanyakan tidak dibutuhkan di situs Anda."
+
+#: settings/config/fields/access-control.php:20
+#: settings/config/fields/security-headers.php:221
+msgid "They might be misused if you don’t actively tell the browser to disable these features."
+msgstr "Fitur mungkin disalahgunakan jika Anda tidak menonaktifkan fitur tersebut di browser."
+
+#: settings/config/fields/security-headers.php:319
+msgid "The content security policy has many options, so we always recommend starting in ‘learning mode’ to see what files and scripts are loaded."
+msgstr "Kebijakan keamanan konten memiliki banyak pilihan, maka kami selalu merekomendasikan untuk memulai dengan 'mode belajar' untuk melihat berkas dan script apa yang dimuat."
+
+#: settings/config/fields/security-headers.php:171
+msgid "One of the most powerful features, and therefore the most complex are the Cross-Origin headers that can isolate your website so any data leaks are minimized."
+msgstr "Salah satu fitur terhebat dan terkompleks adalah header Cross-Origin yang dapat mengisolasi situs Anda sehingga kebocoran data bisa diminimalisasi."
+
+#: settings/config/fields/hardening-basic.php:49
+msgid "Hide your WordPress version"
+msgstr "Sembunyikan versi WordPress Anda"
+
+#: settings/config/fields/hardening-basic.php:70
+msgid "Disable directory browsing"
+msgstr "Nonaktifkan jelajah direktori"
+
+#: settings/config/fields/security-headers.php:143
+msgid "One year"
+msgstr "Satu tahun"
+
+#: settings/config/fields/security-headers.php:144
+msgid "Two years (required for preload)"
+msgstr "Dua tahun (dibutuhkan untuk preload)"
+
+#: settings/config/fields/security-headers.php:142
+msgid "One day (for testing only)"
+msgstr "Satu hari (hanya untuk pengujian)"
+
+#: settings/config/fields/security-headers.php:44
+#: settings/config/fields/security-headers.php:59
+#: settings/config/fields/security-headers.php:162
+#: settings/config/fields/security-headers.php:184
+#: settings/config/fields/security-headers.php:199
+msgid "Off"
+msgstr "Nonaktif"
+
+#: settings/config/fields/encryption.php:17
+msgid "No redirect"
+msgstr "Tidak ada pengalihan"
+
+#: settings/config/menu.php:11
+msgid "Dashboard"
+msgstr "Dasbor"
+
+#: security/wordpress/rename-admin-user.php:15
+msgid "Username 'admin' has been changed to %s"
+msgstr "Nama pengguna 'admin' telah diubah ke %s"
+
+#: security/wordpress/prevent-login-info-leakage.php:9
+msgid "Invalid login details."
+msgstr "Detail login tidak valid."
+
+#: security/wordpress/block-code-execution-uploads.php:24
+msgid "Could not copy code execution test file."
+msgstr "Tidak dapat menyalin kode eksekusi di berkas uji coba."
+
+#: security/notices.php:40
+msgid ".htaccess does not exist"
+msgstr ".htaccess tidak ditemukan"
+
+#: security/notices.php:41
+msgid "An option that requires the .htaccess file is enabled, but the file does not exist."
+msgstr "Pilihan yang membutuhkan berkas .htaccess diaktifkan, tapi berkas tidak ditemukan."
+
+#: security/notices.php:93 settings/config/fields/limit-login-attempts.php:153
+#: settings/config/fields/two-fa.php:155
+#: settings/build/485.47f7474dc2a61c04262b.js:1
+#: settings/src/Settings/LimitLoginAttempts/AddUserModal.js:60
+msgid "Username"
+msgstr "Nama Pengguna"
+
+#: security/notices.php:79
+msgid "We have detected administrator roles where the login and display names are the same."
+msgstr "Kami telah mendeteksi peran administrator di mana login dan tampilan namanya sama."
+
+#: rlrsssl-really-simple-ssl.php:187
+msgid "Update Really Simple SSL Pro: the plugin needs to be updated to the latest version to be compatible."
+msgstr "Perbarui Really Simple SSL Pro: plugin butuh pembaruan ke versi terbaru agar sesuai."
+
+#: lets-encrypt/config/fields.php:12 settings/config/menu.php:725
+msgid "General Settings"
+msgstr "Pengaturan Umum"
+
+#: settings/config/menu.php:68 settings/build/index.c2ac76bdb7421daf20f4.js:1
+#: settings/src/Header.js:32
+msgid "Let's Encrypt"
+msgstr "Let's Encrypt"
+
+#: settings/config/menu.php:264
+msgid "XML-RPC"
+msgstr "XML-RPC"
+
+#: settings/config/menu.php:52
+msgid "The following information is attached when you send this form: license key, scan results, your domain, .htaccess file, debug log and a list of active plugins."
+msgstr "Informasi berikut terlampir ketika Anda mengirim formulir ini: kunci lisensi, hasil pemindaian, domain Anda, berkas .htaccess, log debug, dan daftar plugin aktif."
+
+#: security/wordpress/block-code-execution-uploads.php:37
+msgid "The code to block code execution in the uploads folder cannot be added automatically on nginx. Add the following code to your nginx.conf file:"
+msgstr "Kode untuk memblokir kode eksekusi di folder terunggah tidak dapat ditambahkan otomatis di nginx. Tambahkan kode berikut ke berkas nginx.conf Anda:"
+
+#: placeholders/class-placeholder.php:357
+#: placeholders/class-placeholder.php:398
+#: placeholders/class-placeholder.php:424
+#: placeholders/class-placeholder.php:449
+msgid "Copyright warning!"
+msgstr "Peringatan hak cipta!"
+
+#: placeholders/class-placeholder.php:431
+msgid "Widget area"
+msgstr "Area widget"
+
+#: onboarding/class-onboarding.php:522 onboarding/class-onboarding.php:563
+#: security/firewall-manager.php:626 security/firewall-manager.php:632
+#: security/firewall-manager.php:648 settings/config/menu.php:529
+#: settings/config/menu.php:547 modal/build/index.d4bca8705bbc6e3e5777.js:1
+#: modal/src/components/DeactivationModal/DeactivationModal.js:71
+#: settings/build/366.5ee9613565c0155c0f8e.js:1
+#: settings/src/Dashboard/Progress/ProgressFooter.js:44
+#: settings/src/Dashboard/Progress/ProgressFooter.js:48
+msgid "Firewall"
+msgstr "Firewall"
+
+#: rlrsssl-really-simple-ssl.php:189
+msgid "Visit the plugins overview or %srenew your license%s."
+msgstr "Kunjungi ringkasan plugin atau %sperbarui lisensi Anda%s."
+
+#: lets-encrypt/integrations/cpanel/cpanel.php:108
+#: lets-encrypt/integrations/cpanel/cpanel.php:192
+msgid "Your website's ip address is blocked. Please add your domain's ip address to the security policy in CPanel"
+msgstr "Alamat IP situs Anda diblokir. Mohon tambahkan alamat IP situs Anda ke bagian security policy di CPanel"
+
+#: lets-encrypt/config/notices.php:169 lets-encrypt/config/notices.php:172
+msgid "Renew certificate"
+msgstr "Perbarui sertifikat"
+
+#: lets-encrypt/config/notices.php:166
+msgid "Renew installation"
+msgstr "Perbarui instalasi"
+
+#: lets-encrypt/config/fields.php:396
+msgid "Do you want to store these credentials for renewal purposes?"
+msgstr "Apakah Anda ingin menyimpan kredensial ini untuk tujuan pembaruan?"
+
+#. translators: Accessibility text.
+#: class-site-health.php:197 class-site-health.php:227
+#: class-site-health.php:257
+msgid "(opens in a new tab)"
+msgstr "(buka di tab baru)"
+
+#: class-site-health.php:189
+msgid "The value, WP_DEBUG_LOG, has been added to this website’s configuration file. This means any errors on the site will be written to a file which is potentially available to all users."
+msgstr "Nilai, WP_DEBUG_LOG, telah ditambahkan ke berkas konfigurasi situs ini. Artinya, setiap eror di situs akan dituliskan ke berkas yang mungkin tersedia untuk semua pengguna."
+
+#: placeholders/class-placeholder.php:331
+#: placeholders/class-placeholder.php:348
+#: placeholders/class-placeholder.php:372
+#: placeholders/class-placeholder.php:389
+#: placeholders/class-placeholder.php:415
+#: placeholders/class-placeholder.php:440
+#: settings/build/366.5ee9613565c0155c0f8e.js:1
+#: settings/build/485.47f7474dc2a61c04262b.js:1
+#: settings/build/829.0d69f68a1345874307b1.js:1
+#: settings/src/Settings/MixedContentScan/MixedContentScan.js:90
+#: settings/src/Settings/RiskConfiguration/RiskData.js:115
+msgid "Details"
+msgstr "Detail"
+
+#: lets-encrypt/config/fields.php:307 lets-encrypt/config/fields.php:312
+msgid "CloudWays API key"
+msgstr "Kunci API CloudWays"
+
+#: lets-encrypt/config/fields.php:332
+msgid "Plesk admin URL"
+msgstr "URL admin Plesk"
+
+#: lets-encrypt/config/fields.php:231
+msgid "Direct Admin URL"
+msgstr "URL Direct Admin"
+
+#: lets-encrypt/config/fields.php:356
+msgid "Plesk username and password"
+msgstr "Nama pengguna dan kata sandi Plesk"
+
+#: onboarding/class-onboarding.php:305 settings/config/menu.php:755
+#: settings/build/366.5ee9613565c0155c0f8e.js:1
+#: settings/build/485.47f7474dc2a61c04262b.js:1
+#: settings/build/829.0d69f68a1345874307b1.js:1
+#: settings/src/Dashboard/OtherPlugins/OtherPluginsData.js:74
+#: settings/src/Onboarding/OnboardingControls.js:192
+#: settings/src/Settings/License/License.js:49
+msgid "Activate"
+msgstr "Aktifkan"
+
+#: placeholders/class-placeholder.php:356
+#: placeholders/class-placeholder.php:397
+#: placeholders/class-placeholder.php:423
+#: placeholders/class-placeholder.php:448
+msgid "Import and insert file"
+msgstr "Impor dan tambahkan berkas"
+
+#: lets-encrypt/class-le-restapi.php:235
+msgid "Test not found."
+msgstr "Pengujian tidak ditemukan."
+
+#: lets-encrypt/class-le-restapi.php:166 lets-encrypt/class-le-restapi.php:227
+msgid "Permission denied."
+msgstr "Izin ditolak."
+
+#: lets-encrypt/config/fields.php:145 lets-encrypt/config/fields.php:148
+msgid "Include alias"
+msgstr "Masukkan alias"
+
+#: class-site-health.php:219
+msgid "The value, WP_DEBUG_DISPLAY, has either been enabled by WP_DEBUG or added to your configuration file. This will make errors display on the front end of your site."
+msgstr "Nilai WP_DEBUG_DISPLAY mungkin telah diaktifkan oleh WP_DEBUG atau ditambahkan ke berkas konfigurasi Anda. Hal ini menyebabkan tampilan eror di halaman depan situs Anda."
+
+#: lets-encrypt/config/fields.php:123 lets-encrypt/config/fields.php:126
+msgid "Disable OCSP stapling"
+msgstr "Nonaktifkan OCSP stapling"
+
+#: lets-encrypt/config/fields.php:110
+msgid "I agree to the Terms & Conditions from Let's Encrypt."
+msgstr "Saya setuju dengan Syarat & Ketentuan dari Let's Encrypt."
+
+#: class-site-health.php:211
+msgid "Your site is set to display errors on your website"
+msgstr "Situs Anda diatur untuk menampilkan pesan kesalahan pada situs web Anda"
+
+#: class-site-health.php:181
+msgid "Your site is set to log errors to a potentially public file"
+msgstr "Situs Anda dapat merekam eror pada berkas publik"
+
+#: class-multisite.php:83
+msgid "SSL is not enabled on your network"
+msgstr "SSL tidak diaktifkan pada jaringan Anda"
+
+#: class-admin.php:168
+msgid "Improve security - Upgrade"
+msgstr "Tingkatkan keamanan - Lakukan upgrade"
+
+#: class-admin.php:2016
+msgid "To safely enable SSL on your server configuration, you should add the following line of code to your wp-config.php."
+msgstr "Untuk mengaktifkan SSL secara aman pada konfigurasi server, Anda perlu menambahkan baris kode berikut ke wp-config.php."
+
+#: class-admin.php:1949 settings/build/366.5ee9613565c0155c0f8e.js:1
+#: settings/src/Dashboard/OtherPlugins/OtherPlugins.js:21
+msgid "Upgrade"
+msgstr "Upgrade"
+
+#: class-multisite.php:110
+msgid "SSL activation in progress"
+msgstr "Aktivasi SSL sedang berlangsung"
+
+#: class-admin.php:2267
+msgid "See which recommended security headers are not present on your website."
+msgstr "Periksa rekomendasi header keamanan mana yang tidak muncul di situs Anda."
+
+#: class-multisite.php:111
+msgid "A networkwide SSL activation process has been started, but has not been completed. Please go to the SSL settings page to complete the process."
+msgstr "Proses aktivasi SSL dalam jaringan terlah dimulai, tapi prosesnya belum selesai. Mohon menuju halaman pengaturan SSL untuk menyelesaikan prosesnya."
+
+#: upgrade/upgrade-to-pro.php:545
+msgid "Invalid license."
+msgstr "Lisensi tidak valid."
+
+#: upgrade/upgrade-to-pro.php:542
+msgid "Missing license."
+msgstr "Lisensi hilang."
+
+#: upgrade/upgrade-to-pro.php:548
+msgid "Your license is not active for this URL."
+msgstr "Lisensi Anda tidak aktif untuk URL ini."
+
+#: upgrade/upgrade-to-pro.php:554
+msgid "Your license key has reached its activation limit."
+msgstr "Kunci lisensi Anda telah mencapai batas aktivasi."
+
+#: upgrade/upgrade-to-pro.php:551
+msgid "This appears to be an invalid license key for this plugin."
+msgstr "Tampaknya ini adalah kunci lisensi yang tidak valid untuk plugin ini."
+
+#: upgrade/upgrade-to-pro.php:539
+msgid "Your license key has been disabled."
+msgstr "Lisensi Anda telah dinonaktifkan."
+
+#: upgrade/upgrade-to-pro.php:533
+msgid "Your license key expired on %s."
+msgstr "Lisensi Anda akan kedaluwarsa pada %s."
+
+#: upgrade/upgrade-to-pro.php:525 upgrade/upgrade-to-pro.php:557
+msgid "An error occurred, please try again."
+msgstr "Terjadi eror, silakan coba kembali."
+
+#: upgrade/upgrade-to-pro.php:339
+msgid "Check your %slicense%s."
+msgstr "Cek %slisensi%s Anda."
+
+#: upgrade/upgrade-to-pro.php:338
+msgid "Install %sManually%s."
+msgstr "Menginstal %ssecara manual%s."
+
+#: upgrade/upgrade-to-pro.php:333
+msgid "Visit Dashboard"
+msgstr "Kunjungi Dasbor"
+
+#: upgrade/upgrade-to-pro.php:322
+msgid "Installing"
+msgstr "Menginstal"
+
+#: upgrade/upgrade-to-pro.php:297
+msgid "Recommended by Really Simple Plugins"
+msgstr "Direkomendasikan oleh Really Simple Plugins"
+
+#: upgrade/upgrade-to-pro.php:199
+msgid "Installation finished"
+msgstr "Instalasi selesai"
+
+#: upgrade/upgrade-to-pro.php:143
+msgid "One click SSL optimization"
+msgstr "Optimasi SSL sekali klik"
+
+#: upgrade/upgrade-to-pro.php:107
+msgid "Failed to activate plugin"
+msgstr "Gagal mengaktifkan plugin"
+
+#: upgrade/upgrade-to-pro.php:106
+msgid "Plugin activated"
+msgstr "Plugin telah aktif"
+
+#: upgrade/upgrade-to-pro.php:105
+msgid "Activating plugin..."
+msgstr "Mengaktifkan plugin..."
+
+#: upgrade/upgrade-to-pro.php:100
+msgid "Failed to install plugin"
+msgstr "Gagal dalam menginstal plugin"
+
+#: upgrade/upgrade-to-pro.php:99
+msgid "Plugin installed"
+msgstr "Plugin terinstal"
+
+#: upgrade/upgrade-to-pro.php:98
+msgid "Installing plugin..."
+msgstr "Menginstal plugin..."
+
+#: upgrade/upgrade-to-pro.php:93
+msgid "Failed to gather package information"
+msgstr "Gagal dalam mengambil informasi paket"
+
+#: upgrade/upgrade-to-pro.php:92
+msgid "Package information retrieved"
+msgstr "Informasi paket telah didapat"
+
+#: upgrade/upgrade-to-pro.php:91
+msgid "Retrieving package information..."
+msgstr "Mendapatkan informasi paket..."
+
+#: upgrade/upgrade-to-pro.php:85
+msgid "License valid"
+msgstr "Lisensi valid"
+
+#: upgrade/upgrade-to-pro.php:84
+msgid "Validating license..."
+msgstr "Memvalidasi lisensi..."
+
+#: upgrade/upgrade-to-pro.php:86
+msgid "License invalid"
+msgstr "Lisensi tidak valid"
+
+#: upgrade/upgrade-to-pro.php:79
+msgid "Destination folder already exists"
+msgstr "Folder tujuan sudah ada"
+
+#: upgrade/upgrade-to-pro.php:78
+msgid "Able to create destination folder"
+msgstr "Dapat membuat folder tujuan"
+
+#: upgrade/upgrade-to-pro.php:77
+msgid "Checking if plugin folder exists..."
+msgstr "Memeriksa apakah folder plugin sudah ada..."
+
+#: class-admin.php:2121
+msgid "Check manually"
+msgstr "Periksa secara manual"
+
+#: class-admin.php:2116 onboarding/class-onboarding.php:389
+msgid "Could not test certificate"
+msgstr "Tidak dapat menguji sertifikat"
+
+#: class-admin.php:2117 onboarding/class-onboarding.php:389
+msgid "Automatic certificate detection is not possible on your server."
+msgstr "Deteksi sertifikat otomatis tidak dapat dilakukan di server Anda."
+
+#: lets-encrypt/config/fields.php:422
+msgid "Checking host..."
+msgstr "Memeriksa host..."
+
+#: lets-encrypt/class-letsencrypt-handler.php:1190
+msgid "We have not detected any known hosting limitations."
+msgstr "Kami tidak mendeteksi adanya batasan hosting."
+
+#: class-multisite.php:239 class-multisite.php:240 class-site-health.php:100
+#: class-site-health.php:131 class-site-health.php:162
+#: class-site-health.php:184 class-site-health.php:214
+#: class-site-health.php:244 class-site-health.php:275
+#: class-site-health.php:315 security/wordpress/vulnerabilities.php:299
+#: security/wordpress/vulnerabilities.php:319 settings/settings.php:197
+#: settings/settings.php:198 settings/settings.php:230
+msgid "Security"
+msgstr "Keamanan"
+
+#: class-admin.php:2276
+msgid "Recommended security headers enabled."
+msgstr "Rekomendasi header keamanan telah diaktifkan."
+
+#: lets-encrypt/config/fields.php:124
+msgid "OCSP stapling is configured as enabled by default. You can disable this option if this is not supported by your hosting provider."
+msgstr "OCSP stapling dikonfigurasi aktif secara otomatis. Anda dapat menonaktifkan pilihan ini jika penyedia hosting Anda tidak mendukung."
+
+#: lets-encrypt/functions.php:12
+msgid "For more information, please read this %sarticle%s"
+msgstr "Untuk informasi lebih lanjut, mohon baca %sartikel%s ini"
+
+#: lets-encrypt/class-letsencrypt-handler.php:1045
+msgid "The Terms & Conditions were not accepted. Please accept in the general settings."
+msgstr "Syarat & Ketentuan tidak diterima. Harap terima di pengaturan umum."
+
+#: lets-encrypt/class-letsencrypt-handler.php:1041
+msgid "Terms & Conditions are accepted."
+msgstr "Syarat & Ketentuan diterima."
+
+#: lets-encrypt/config/fields.php:506
+msgid "Checking if Terms & Conditions are accepted..."
+msgstr "Memeriksa apakah Syarat & Ketentuan diterima..."
+
+#. translators: %s is replaced with the plugin name.
+#: class-admin.php:2323
+msgid "We have detected the %s plugin on your website."
+msgstr "Kami mendeteksi plugin %s di situs Anda."
+
+#: onboarding/class-onboarding.php:395
+msgid "No SSL certificate has been detected."
+msgstr "Tidak ada sertifikat SSL yang terdeteksi."
+
+#: lets-encrypt/config/notices.php:128
+msgid "Your server provides shell functionality, which offers additional methods to install SSL. If installing SSL using the default methods is not possible, you can install the shell add on."
+msgstr "Server Anda menyediakan fungsionalitas shell, yang menawarkan metode tambahan untuk menginstal SSL. Jika instalasi SSL menggunakan metode default tidak memungkinkan, Anda dapat menginstal shell add on."
+
+#: lets-encrypt/class-letsencrypt-handler.php:475
+msgid "Order ID mismatch, regenerate order."
+msgstr "ID pesanan tidak sesuai, buat ulang pesanan."
+
+#: lets-encrypt/class-letsencrypt-handler.php:478
+msgid "If you entered your DNS records before, they need to be changed."
+msgstr "Jika Anda memasukkan DNS record sebelumnya, maka perlu diubah."
+
+#: settings/config/fields/general.php:60
+#: settings/build/485.47f7474dc2a61c04262b.js:1
+#: settings/src/LetsEncrypt/Installation.js:95
+#: settings/src/LetsEncrypt/Installation.js:100
+#: settings/src/LetsEncrypt/Installation.js:104
+msgid "Download"
+msgstr "Unduh"
+
+#: lets-encrypt/config/fields.php:17 settings/config/menu.php:735
+msgid "Directories"
+msgstr "Direktori"
+
+#: settings/config/menu.php:213 settings/build/995.7a0675fe0519b06656b3.js:1
+#: settings/src/Settings/Settings.js:164
+msgid "Notifications"
+msgstr "Pemberitahuan"
+
+#: lets-encrypt/config/fields.php:29 settings/config/menu.php:750
+msgid "Installation"
+msgstr "Instalasi"
+
+#: lets-encrypt/config/fields.php:25 settings/config/menu.php:745
+msgid "Generation"
+msgstr "Generasi"
+
+#: lets-encrypt/config/fields.php:474 lets-encrypt/config/fields.php:512
+msgid "Creating account..."
+msgstr "Membuat akun..."
+
+#: lets-encrypt/config/notices.php:28
+msgid "Your Key and Certificate directories are not properly protected."
+msgstr "Direktori Kunci dan Sertifikat Anda tidak dilindungi dengan tepat."
+
+#: lets-encrypt/config/notices.php:111
+msgid "Your certificate will be renewed and installed automatically."
+msgstr "Sertifikat Anda akan diperbarui dan diinstal secara otomatis."
+
+#: lets-encrypt/config/notices.php:104
+msgid "Automatic renewal of your certificate was not possible. The SSL certificate should be %srenewed%s manually."
+msgstr "Perpanjangan otomatis sertifikat Anda tidak dapat dilakukan. Sertifikat SSL harus %sdiperbarui%s secara manual."
+
+#: lets-encrypt/config/notices.php:75
+msgid "Your certificate will expire on %s. You can renew it %shere%s."
+msgstr "Sertifikat Anda akan kedaluwarsa pada %s. Anda dapat memperbaruinya %sdi sini%s."
+
+#: lets-encrypt/config/fields.php:453
+msgid "Checking challenge directory reachable over http..."
+msgstr "Memeriksa direktori tantangan yang dapat dijangkau melalui http..."
+
+#: lets-encrypt/config/fields.php:446
+msgid "Checking permissions..."
+msgstr "Memeriksa izin..."
+
+#: lets-encrypt/config/fields.php:440
+msgid "Checking certs directory..."
+msgstr "Memeriksa direktori sertifikat..."
+
+#: lets-encrypt/config/fields.php:434
+msgid "Checking key directory..."
+msgstr "Memeriksa direktori kunci..."
+
+#: lets-encrypt/config/fields.php:428
+msgid "Checking challenge directory..."
+msgstr "Memeriksa direktori tantangan..."
+
+#: lets-encrypt/config/notices.php:90
+msgid "The automatic installation of your certificate has failed. Please check your credentials, and retry the %sinstallation%s."
+msgstr "Instalasi otomatis sertifikat Anda telah gagal. Harap periksa kredensial Anda, dan coba lagi %sinstallation%s."
+
+#: lets-encrypt/config/notices.php:43
+msgid "The www version of your site does not point to this website. This is recommended, as it will allow you to add it to the certificate as well."
+msgstr "Versi www situs Anda tidak mengarah ke situs web ini. Ini direkomendasikan, karena ini akan memungkinkan Anda untuk menambahkannya ke sertifikat juga."
+
+#: lets-encrypt/config/notices.php:41
+msgid "The non-www version of your site does not point to this website. This is recommended, as it will allow you to add it to the certificate as well."
+msgstr "Versi non-www situs Anda tidak mengarah ke situs web ini. Ini direkomendasikan, karena ini akan memungkinkan Anda untuk menambahkannya ke sertifikat juga."
+
+#: lets-encrypt/config/fields.php:532
+msgid "Searching for link to SSL installation page on your server..."
+msgstr "Mencari tautan ke halaman instalasi SSL di server Anda..."
+
+#: lets-encrypt/config/fields.php:480
+msgid "Retrieving DNS verification token..."
+msgstr "Mengambil token verifikasi DNS..."
+
+#: lets-encrypt/config/notices.php:97
+msgid "The SSL certificate has been renewed, and requires manual %sinstallation%s in your hosting dashboard."
+msgstr "Sertifikat SSL telah diperbarui, dan membutuhkan %sinstalasi%s manual di dasbor hosting Anda."
+
+#: settings/config/menu.php:729
+msgid "Hosting"
+msgstr "Hosting"
+
+#: settings/config/menu.php:718
+msgid "Letʼs Encrypt is a free, automated and open certificate authority brought to you by the nonprofit Internet Security Research Group (ISRG)."
+msgstr "Letʼs Encrypt adalah otoritas sertifikat gratis, otomatis, dan terbuka yang dipersembahkan oleh Internet Security Research Group (ISRG) nirlaba."
+
+#: settings/config/menu.php:710
+msgid " Please note that you can always save and finish the wizard later, use our %sdocumentation%s for additional information or log a %ssupport ticket%s if you need our assistance."
+msgstr "Harap perhatikan bahwa Anda selalu dapat menyimpan dan menyelesaikan wizard nanti, gunakan %sdokumentasi%s kami untuk informasi tambahan atau log %stiket dukungan%s jika Anda memerlukan bantuan kami."
+
+#: settings/config/menu.php:708
+msgid "We have tried to make our Wizard as simple and fast as possible. Although these questions are all necessary, if there’s any way you think we can improve the plugin, please let us %sknow%s!"
+msgstr "Kami telah mencoba membuat Wizard kami sesederhana dan secepat mungkin. Meskipun semua pertanyaan ini diperlukan, jika menurut Anda kami dapat meningkatkan plugin ini, %sberi tahu kami%s!"
+
+#: lets-encrypt/config/fields.php:209
+msgid "CPanel password"
+msgstr "kata sandi CPanel"
+
+#: lets-encrypt/config/fields.php:134 lets-encrypt/config/notices.php:51
+#: settings/build/485.47f7474dc2a61c04262b.js:1
+#: settings/src/LetsEncrypt/DnsVerification.js:62
+msgid "Domain"
+msgstr "Domain"
+
+#: lets-encrypt/config/fields.php:377
+msgid "Plesk password"
+msgstr "Kata sandi Plesk"
+
+#: lets-encrypt/config/fields.php:353
+msgid "Plesk username"
+msgstr "Nama pengguna Plesk"
+
+#: lets-encrypt/config/fields.php:291
+msgid "CloudWays user email"
+msgstr "Email Pengguna CloudWays"
+
+#: lets-encrypt/config/fields.php:271
+msgid "DirectAdmin password"
+msgstr "Kata sandi DirectAdmin"
+
+#: lets-encrypt/config/fields.php:252
+msgid "DirectAdmin username"
+msgstr "Nama pengguna DirectAdmin"
+
+#: settings/config/fields/general.php:32
+msgid "Hosting provider"
+msgstr "Penyedia jasa hosting"
+
+#: lets-encrypt/config/fields.php:94 lets-encrypt/config/fields.php:97
+#: settings/config/fields/general.php:78
+msgid "Email address"
+msgstr "Alamat Email"
+
+#: lets-encrypt/config/fields.php:190
+msgid "CPanel username"
+msgstr "Nama pengguna CPanel"
+
+#: lets-encrypt/config/fields.php:357
+msgid "You can find your Plesk username and password in %s"
+msgstr "Anda dapat menemukan nama pengguna dan kata sandi Plesk Anda di %s"
+
+#: lets-encrypt/config/fields.php:166 lets-encrypt/config/fields.php:169
+msgid "CPanel host"
+msgstr "host CPanel"
+
+#: lets-encrypt/config/fields.php:47
+msgid "Detected status of your setup."
+msgstr "Status terdeteksi dari pengaturan Anda."
+
+#: lets-encrypt/config/fields.php:76
+msgid "Checking for website configuration..."
+msgstr "Memeriksa konfigurasi situs web..."
+
+#: lets-encrypt/config/fields.php:70
+msgid "Checking alias domain..."
+msgstr "Memeriksa domain alias..."
+
+#: lets-encrypt/config/fields.php:64
+msgid "Checking server software..."
+msgstr "Memeriksa perangkat lunak server..."
+
+#: lets-encrypt/config/fields.php:58
+msgid "Checking if CURL is available..."
+msgstr "Memeriksa apakah CURL tersedia..."
+
+#: lets-encrypt/config/fields.php:52
+msgid "Checking SSL certificate..."
+msgstr "Memeriksa sertifikat SSL..."
+
+#: lets-encrypt/config/fields.php:400
+msgid "Store for renewal purposes. If not stored, renewal may need to be done manually."
+msgstr "Simpan untuk tujuan pembaruan. Jika tidak disimpan, pembaruan mungkin perlu dilakukan secara manual."
+
+#: lets-encrypt/config/fields.php:333
+msgid "The URL you use to access your Plesk dashboard. Ends on :8443."
+msgstr "URL yang Anda gunakan untuk mengakses dasbor Plesk Anda. Berakhir pada :8443."
+
+#: lets-encrypt/config/fields.php:313
+msgid "You can find your api key %shere%s (make sure you're logged in with your main account)."
+msgstr "Anda dapat menemukan kunci api %sdi sini%s (pastikan Anda masuk dengan akun utama Anda)."
+
+#: lets-encrypt/config/fields.php:232
+msgid "The URL you use to access your DirectAdmin dashboard. Ends on :2222."
+msgstr "URL yang Anda gunakan untuk mengakses dasbor DirectAdmin Anda. Berakhir pada :2222."
+
+#: lets-encrypt/config/fields.php:170
+msgid "The URL you use to access your cPanel dashboard. Ends on :2083."
+msgstr "URL yang Anda gunakan untuk mengakses dasbor cPanel Anda. Berakhir pada :2083."
+
+#: lets-encrypt/config/fields.php:150
+msgid "You should have the www domain pointed to the same website as the non-www domain."
+msgstr "Anda harus mengarahkan domain www ke situs web yang sama dengan domain non-www."
+
+#: lets-encrypt/config/fields.php:149
+msgid "This will include both the www. and non-www. version of your domain."
+msgstr "Ini akan mencakup www. dan non www. versi domain Anda."
+
+#: lets-encrypt/config/class-hosts.php:788
+msgid "I don't know, or not listed, proceed with installation"
+msgstr "Saya tidak tahu, atau tidak terdaftar, lanjutkan dengan instalasi"
+
+#: lets-encrypt/config/fields.php:329
+msgid "Plesk host"
+msgstr "Host Plesk"
+
+#: lets-encrypt/config/fields.php:228
+msgid "DirectAdmin host"
+msgstr "Host DirectAdmin"
+
+#: lets-encrypt/class-letsencrypt-handler.php:1846
+msgid "Installation failed."
+msgstr "Instalasi gagal."
+
+#: lets-encrypt/class-letsencrypt-handler.php:1841
+msgid "Not recognized server."
+msgstr "Server tidak dikenali."
+
+#: lets-encrypt/class-letsencrypt-handler.php:1325
+#: lets-encrypt/class-letsencrypt-handler.php:1669
+msgid "no response"
+msgstr "tidak ada respon"
+
+#: lets-encrypt/class-letsencrypt-handler.php:728
+msgid "Authorization not completed yet."
+msgstr "Otorisasi belum selesai."
+
+#: lets-encrypt/class-letsencrypt-handler.php:562
+msgid "Successfully verified DNS records"
+msgstr "Berhasil memverifikasi DNS records"
+
+#: lets-encrypt/config/fields.php:550
+msgid "Checking for subdomain setup..."
+msgstr "Memeriksa pengaturan subdomain..."
+
+#: lets-encrypt/config/fields.php:518
+msgid "Generating SSL certificate..."
+msgstr "Membuat sertifikat SSL..."
+
+#: lets-encrypt/integrations/plesk/plesk.php:90
+msgid "Successfully installed SSL"
+msgstr "Berhasil menginstal SSL"
+
+#: lets-encrypt/integrations/plesk/functions.php:33
+msgid "Installing SSL certificate using PLESK API..."
+msgstr "Menginstal sertifikat SSL menggunakan API PLESK..."
+
+#: lets-encrypt/integrations/cpanel/functions.php:107
+#: lets-encrypt/integrations/directadmin/functions.php:35
+msgid "Attempting to install certificate..."
+msgstr "Mencoba menginstal sertifikat..."
+
+#: lets-encrypt/integrations/cpanel/functions.php:100
+msgid "Attempting to set DNS txt record..."
+msgstr "Mencoba atur DNS txt record..."
+
+#: lets-encrypt/integrations/cpanel/functions.php:91
+msgid "Attempting to install certificate using AutoSSL..."
+msgstr "Mencoba menginstall sertifikat menggunakan AutoSSL..."
+
+#: lets-encrypt/integrations/cpanel/functions.php:63
+msgid "The system is not ready for the DNS verification yet. Please run the wizard again."
+msgstr "Sistem belum siap untuk verifikasi DNS. Mohon jalankan panduan kembali."
+
+#: lets-encrypt/integrations/cpanel/cpanel.php:310
+#: lets-encrypt/integrations/cpanel/cpanel.php:329
+msgid "Could not automatically add TXT record. Please proceed manually, following the steps below."
+msgstr "Tidak dapat menambahkan TXT record secara otomatis. Mohon lanjutkan secara manual, ikuti langkah-langkah di bawah."
+
+#: lets-encrypt/integrations/cpanel/cpanel.php:306
+#: lets-encrypt/integrations/cpanel/cpanel.php:325
+msgid "Successfully added TXT record."
+msgstr "Berhasil menambahkan TXT record."
+
+#: lets-encrypt/integrations/cpanel/cpanel.php:298
+msgid "Login credentials incorrect"
+msgstr "Kredensial login salah"
+
+#: lets-encrypt/integrations/cpanel/cpanel.php:294
+msgid "Unable to connect to cPanel"
+msgstr "Tidak dapat menyambungkan ke cPanel"
+
+#: lets-encrypt/integrations/cpanel/cpanel.php:128
+#: lets-encrypt/integrations/cpanel/cpanel.php:207
+msgid "Errors were reported during installation."
+msgstr "Kesalahan dilaporkan selama instalasi."
+
+#: lets-encrypt/integrations/cpanel/cpanel.php:123
+#: lets-encrypt/integrations/directadmin/directadmin.php:124
+msgid "SSL successfully installed on %s"
+msgstr "SSL berhasil diinstal di %s"
+
+#: lets-encrypt/integrations/cpanel/cpanel.php:66
+#: lets-encrypt/integrations/directadmin/directadmin.php:66
+msgid "No valid list of domains."
+msgstr "Tidak ada daftar domain yang valid."
+
+#: lets-encrypt/integrations/cloudways/functions.php:49
+msgid "Enabling auto renew..."
+msgstr "Mengaktifkan perpanjangan otomatis..."
+
+#: lets-encrypt/integrations/cloudways/functions.php:43
+msgid "Installing SSL certificate..."
+msgstr "Menginstal sertifikat SSL..."
+
+#: lets-encrypt/integrations/cloudways/functions.php:37
+msgid "Retrieving Cloudways server data..."
+msgstr "Mengambil data server Cloudways..."
+
+#: lets-encrypt/integrations/cloudways/cloudways.php:252
+msgid "Could not retrieve server list"
+msgstr "Tidak dapat mendapatkan daftar server"
+
+#: lets-encrypt/integrations/cloudways/cloudways.php:212
+#: lets-encrypt/integrations/cloudways/cloudways.php:245
+msgid "Successfully retrieved server id and app id"
+msgstr "Berhasil mengambil id server dan id aplikasi"
+
+#: lets-encrypt/integrations/cloudways/cloudways.php:196
+msgid "Error enabling auto renew for Let's Encrypt"
+msgstr "Eror saat mengaktifkan perpanjangan otomatis untuk Let's Encrypt"
+
+#: lets-encrypt/integrations/cloudways/cloudways.php:181
+#: lets-encrypt/integrations/cloudways/cloudways.php:187
+msgid "Successfully installed Let's Encrypt"
+msgstr "Berhasil menginstal Let's Encrypt"
+
+#: lets-encrypt/integrations/cloudways/cloudways.php:161
+msgid "Failed retrieving access token"
+msgstr "Gagal mengambil token akses"
+
+#: lets-encrypt/functions.php:404
+msgid "Your hosting environment does not allow automatic SSL installation."
+msgstr "Lingkungan hosting Anda tidak mengizinkan pemasangan SSL otomatis."
+
+#: lets-encrypt/class-letsencrypt-handler.php:1197
+#: lets-encrypt/functions.php:401
+msgid "According to our information, your hosting provider does not allow any kind of SSL installation, other then their own paid certificate. For an alternative hosting provider with SSL, see this %sarticle%s."
+msgstr "Menurut informasi kami, penyedia hosting Anda tidak memungkinkan segala jenis instalasi SSL, selain sertifikat berbayar mereka sendiri. Untuk penyedia hosting alternatif dengan SSL, lihat artikel %sberikut%s."
+
+#: lets-encrypt/functions.php:395
+msgid "You already have free SSL on your hosting environment."
+msgstr "Anda sudah memiliki SSL gratis di lingkungan hosting Anda."
+
+#: lets-encrypt/functions.php:393 lets-encrypt/functions.php:397
+#: lets-encrypt/functions.php:407
+msgid "After completing the installation, you can continue to the next step to complete your configuration."
+msgstr "Setelah menyelesaikan instalasi, Anda dapat melanjutkan ke langkah berikutnya untuk menyelesaikan konfigurasi Anda."
+
+#: lets-encrypt/class-letsencrypt-handler.php:1204
+#: lets-encrypt/functions.php:391
+msgid "According to our information, your hosting provider supplies your account with an SSL certificate by default. Please contact your %shosting support%s if this is not the case."
+msgstr "Menurut informasi kami, penyedia hosting Anda memberikan akun Anda dengan sertifikat SSL secara standar. Mohon hubungi %sdukungan hosting%s Anda jika tidak demikian."
+
+#: lets-encrypt/functions.php:386
+msgid "Go to installation"
+msgstr "Pergi ke instalasi"
+
+#: lets-encrypt/functions.php:385
+msgid "Go to activation"
+msgstr "Pergi ke aktivasi"
+
+#: lets-encrypt/functions.php:384
+msgid "Please activate it on your dashboard %smanually%s"
+msgstr "Mohon aktifkan di dasbor Anda secara %smanual%s"
+
+#: lets-encrypt/functions.php:383
+msgid "Please complete %smanually%s"
+msgstr "Mohon dilengkapi %smanual%s"
+
+#: lets-encrypt/functions.php:381
+msgid "Please activate it manually on your hosting dashboard."
+msgstr "Mohon aktifkan ini secara manual di dasbor hosting Anda."
+
+#: lets-encrypt/functions.php:380
+msgid "Please complete manually in your hosting dashboard."
+msgstr "Mohon lengkapi secara manual di dasbor hosting Anda."
+
+#: lets-encrypt/download.php:49
+msgid "File missing. Please retry the previous steps."
+msgstr "Berkas hilang. Mohon coba lagi langkah-langkah sebelumnya."
+
+#: security/cron.php:96
+msgid "Once every 5 minutes"
+msgstr "Sekali setiap 5 menit"
+
+#: security/cron.php:100
+msgid "Once every day"
+msgstr "Sekali dalam sehari"
+
+#: security/cron.php:108
+msgid "Once every week"
+msgstr "Sekali setiap minggu"
+
+#: lets-encrypt/class-letsencrypt-handler.php:1851
+#: lets-encrypt/integrations/cloudways/functions.php:22
+#: lets-encrypt/integrations/cpanel/functions.php:17
+#: lets-encrypt/integrations/cpanel/functions.php:35
+#: lets-encrypt/integrations/directadmin/functions.php:16
+#: lets-encrypt/integrations/plesk/functions.php:16
+msgid "The system is not ready for the installation yet. Please run the wizard again."
+msgstr "Sistem belum siap untuk instalasi. Mohon jalankan panduan lagi."
+
+#: lets-encrypt/class-letsencrypt-handler.php:1349
+#: lets-encrypt/class-letsencrypt-handler.php:1353
+#: lets-encrypt/class-letsencrypt-handler.php:1732
+msgid "Error code %s"
+msgstr "Kode eror %s"
+
+#: lets-encrypt/class-letsencrypt-handler.php:1715
+msgid "Please create a folder 'rsssl' in the uploads directory, with 644 permissions."
+msgstr "Mohon buat folder 'rsssl' di direktori unggahan, dengan kode izin 644."
+
+#: lets-encrypt/class-letsencrypt-handler.php:1714
+msgid "Could not create test folder and file."
+msgstr "Tidak dapat membuat folder dan berkas pengujian."
+
+#: lets-encrypt/class-letsencrypt-handler.php:1685
+msgid "If this is not the case, don't add this alias to your certificate."
+msgstr "Jika tidak demikian, jangan tambahkan alias ini ke sertifikat Anda."
+
+#: lets-encrypt/class-letsencrypt-handler.php:1685
+msgid "Could not verify alias domain."
+msgstr "Tidak dapat melakukan verifikasi domain alias."
+
+#: lets-encrypt/class-letsencrypt-handler.php:1683
+msgid "Please check if the www version of your site also points to this website."
+msgstr "Mohon periksa jika versi www situs Anda juga mengarah ke situs web ini."
+
+#: lets-encrypt/class-letsencrypt-handler.php:1681
+msgid "Please check if the non www version of your site also points to this website."
+msgstr "Mohon periksa jika versi non www dari situs Anda juga mengarah ke situs web ini."
+
+#: lets-encrypt/class-letsencrypt-handler.php:1662
+msgid "Alias domain check is not relevant for a subdomain"
+msgstr "Pemeriksaan domain alias tidak relevan untuk subdomain"
+
+#: lets-encrypt/class-letsencrypt-handler.php:1632
+msgid "No subdomain setup detected."
+msgstr "Tidak ada pengaturan subdomain yang terdeteksi."
+
+#: lets-encrypt/class-letsencrypt-handler.php:1360
+#: lets-encrypt/class-letsencrypt-handler.php:1692
+#: lets-encrypt/class-letsencrypt-handler.php:1743
+msgid "Successfully verified alias domain."
+msgstr "Domain alias berhasil diverifikasi."
+
+#: lets-encrypt/class-letsencrypt-handler.php:1335
+msgid "Challenge directory not writable."
+msgstr "Direktori tantangan tidak dapat ditulis."
+
+#: lets-encrypt/class-letsencrypt-handler.php:1329
+msgid "Could not reach challenge directory over %s."
+msgstr "Tidak dapat menjangkau direktori tantangan melalui %s."
+
+#: lets-encrypt/class-letsencrypt-handler.php:1267
+msgid "The certs directory was successfully created."
+msgstr "Direktori certs berhasil dibuat."
+
+#: lets-encrypt/class-letsencrypt-handler.php:1263
+msgid "The certs directory is not created yet."
+msgstr "Direktori certs belum dibuat."
+
+#: lets-encrypt/class-letsencrypt-handler.php:1249
+msgid "The key directory was successfully created."
+msgstr "Direktori kunci berhasil dibuat."
+
+#: lets-encrypt/class-letsencrypt-handler.php:894
+msgid "Order successfully retrieved."
+msgstr "Pesanan berhasil diambil."
+
+#: lets-encrypt/class-letsencrypt-handler.php:704
+#: lets-encrypt/class-letsencrypt-handler.php:780
+msgid "Files not created yet..."
+msgstr "Berkas sama sekali belum di buat..."
+
+#: lets-encrypt/class-letsencrypt-handler.php:774
+msgid "Successfully generated certificate."
+msgstr "Berhasil membuat sertifikat."
+
+#: lets-encrypt/class-letsencrypt-handler.php:698
+msgid "Certificate already generated. It was renewed if required."
+msgstr "Sertifikat sudah dibuat. Akan diperbarui jika diperlukan."
+
+#: lets-encrypt/class-letsencrypt-handler.php:456
+msgid "Token not received yet."
+msgstr "Token belum diterima."
+
+#: lets-encrypt/class-letsencrypt-handler.php:403
+msgid "The email address was not set. Please set the email address"
+msgstr "Alamat e-mail belum diatur. Mohon atur alamat e-mail"
+
+#: lets-encrypt/class-letsencrypt-handler.php:394
+msgid "The used domain for your email address is not allowed."
+msgstr "Domain yang dipakai untuk alamat e-mail Anda tidak diizinkan."
+
+#: lets-encrypt/class-letsencrypt-handler.php:582
+msgid "Could not verify TXT record for domain %s"
+msgstr "Tidak dapat melakukan verifikasi TXT record untuk domain %s"
+
+#: lets-encrypt/class-letsencrypt-handler.php:548
+#: lets-encrypt/integrations/cpanel/functions.php:47
+msgid "Token not generated. Please complete the previous step."
+msgstr "Token tidak dapat dibuat. Mohon lengkapi langkah sebelumnya."
+
+#: lets-encrypt/class-letsencrypt-handler.php:395
+msgid "Please change your email address %shere%s and try again."
+msgstr "Mohon ubah alamat e-mail Anda %sdi sini%s dan coba lagi."
+
+#: lets-encrypt/class-letsencrypt-handler.php:1154
+msgid "Please complete the following step(s) first: %s"
+msgstr "Mohon lengkapi langkah berikut terlebih dulu: %s"
+
+#: lets-encrypt/class-letsencrypt-handler.php:788
+msgid "Bundle not available yet..."
+msgstr "Bundel belum tersedia..."
+
+#: lets-encrypt/class-letsencrypt-handler.php:659
+msgid "DNS records were not verified yet. Please complete the previous step."
+msgstr "Catatan DNS belum terverifikasi. Mohon lengkapi langkah sebelumnya."
+
+#: lets-encrypt/class-letsencrypt-handler.php:645
+msgid "Please double check your DNS txt record."
+msgstr "Mohon cek kembali catatan DNS txt Anda."
+
+#: lets-encrypt/class-letsencrypt-handler.php:387
+msgid "Successfully retrieved account"
+msgstr "Sukses mengembalikan akun"
+
+#: lets-encrypt/class-letsencrypt-handler.php:347
+msgid "DirectAdmin recognized. Possibly the certificate can be installed automatically."
+msgstr "DirectAdmin dikenali. Sertifikat mungkin dapat diinstal otomatis."
+
+#: lets-encrypt/class-letsencrypt-handler.php:344
+msgid "Plesk recognized. Possibly the certificate can be installed automatically."
+msgstr "Plesk dikenali. Sertifikat mungkin dapat diinstal otomatis."
+
+#: lets-encrypt/class-letsencrypt-handler.php:341
+msgid "CPanel recognized. Possibly the certificate can be installed automatically."
+msgstr "CPanel dikenali. Sertifikat mungkin dapat diinstal otomatis."
+
+#: lets-encrypt/class-letsencrypt-handler.php:337
+msgid "The Hosting Panel software was not recognized. Depending on your hosting provider, the generated certificate may need to be installed manually."
+msgstr "Panel penyedia hosting tidak terdeteksi. Tergantung penyedia hosting Anda, sertifikat yang dibuat perlu diinstal secara manual."
+
+#: lets-encrypt/class-letsencrypt-handler.php:572
+msgid "The DNS response for %s was %s, while it should be %s."
+msgstr "Respons DNS untuk %s adalah %s, ketika seharusnya %s."
+
+#: lets-encrypt/class-letsencrypt-handler.php:1170
+msgid "Set permissions to 644 to enable SSL generation."
+msgstr "Atur izin ke 644 to mengaktifkan pembuatan SSL."
+
+#: lets-encrypt/class-letsencrypt-handler.php:1170
+msgid "The following directories do not have the necessary writing permissions."
+msgstr "Direktori berikut tidak memiliki izin penulisan yang dibutuhkan."
+
+#: lets-encrypt/class-letsencrypt-handler.php:878
+msgid "Order successfully created."
+msgstr "Pesanan berhasil dibuat."
+
+#: lets-encrypt/class-letsencrypt-handler.php:760
+msgid "OCSP not supported, the certificate will be generated without OCSP."
+msgstr "Tidak didukung OCSP, sertifikat akan dibuat tanpa OCSP."
+
+#: lets-encrypt/class-letsencrypt-handler.php:752
+msgid "As your order will be regenerated, you'll need to update your DNS text records."
+msgstr "Pesanan Anda akan dibuat ulang, Anda perlu memperbarui catatan teks DNS Anda."
+
+#: lets-encrypt/class-letsencrypt-handler.php:471
+#: lets-encrypt/class-letsencrypt-handler.php:749
+msgid "The order is invalid, possibly due to too many failed authorization attempts. Please start at the previous step."
+msgstr "Pesanan Anda tidak valid, mungkin akibat terlalu banyak usaha otorisasi yang gagal. Mohon mulai dari langkah sebelumnya."
+
+#: lets-encrypt/class-letsencrypt-handler.php:367
+msgid "The PHP function CURL has successfully been detected."
+msgstr "Fungsi PHP CURL berhasil dideteksi."
+
+#: lets-encrypt/class-letsencrypt-handler.php:363
+msgid "The PHP function CURL is not available on your server, which is required. Please contact your hosting provider."
+msgstr "Fungsi PHP CURL yang dibutuhkan tidak tersedia di server Anda. Mohon hubungi penyedia hosting Anda."
+
+#: lets-encrypt/functions.php:406
+msgid "You can follow these %sinstructions%s."
+msgstr "Anda dapat mengikuti %spetunjuk berikut ini%s."
+
+#: class-admin.php:2005 lets-encrypt/class-letsencrypt-handler.php:290
+msgid "(unknown)"
+msgstr "(tidak diketahui)"
+
+#: class-admin.php:2136 settings/build/366.5ee9613565c0155c0f8e.js:1
+#: settings/build/485.47f7474dc2a61c04262b.js:1
+#: settings/build/829.0d69f68a1345874307b1.js:1
+#: settings/src/Dashboard/TaskElement.js:66
+msgid "Re-check"
+msgstr "Periksa kembali"
+
+#: class-admin.php:2111
+msgid "Retry"
+msgstr "Coba lagi"
+
+#: lets-encrypt/class-letsencrypt-handler.php:300
+msgid "You already have a valid SSL certificate."
+msgstr "Anda sudah memiliki sertifikat SSL yang valid."
+
+#: lets-encrypt/class-letsencrypt-handler.php:226
+msgid "Your domain meets the requirements for Let's Encrypt."
+msgstr "Domain Anda memenuhi persyaratan untuk Let's Encrypt."
+
+#: lets-encrypt/class-letsencrypt-handler.php:208
+msgid "It is not possible to install Let's Encrypt on a localhost environment."
+msgstr "Tidak mungkin menginstal Let's Encrypt di lingkungan localhost."
+
+#: lets-encrypt/class-letsencrypt-handler.php:218
+msgid "It is not possible to install Let's Encrypt on a subfolder configuration."
+msgstr "Tidak mungkin menginstal Let's Encrypt di konfigurasi subfolder."
+
+#: lets-encrypt/class-letsencrypt-handler.php:213
+msgid "It is not possible to install Let's Encrypt on a subsite. Please go to the main site of your website."
+msgstr "Tidak mungkin menginstal Let's Encrypt di subsitus. Mohon pindah ke situs utama situs web Anda."
+
+#: class-admin.php:2126
+msgid "Your SSL certificate will expire soon."
+msgstr "Seritifikat SSL Anda akan segera kedaluwarsa."
+
+#. translators: %s is replaced with date.
+#: class-admin.php:2129
+msgid "SSL certificate will expire on %s."
+msgstr "Sertifikat SSL akan kedaluwarsa pada %s."
+
+#: class-admin.php:2110 class-admin.php:2120 class-admin.php:2135
+msgid "Install SSL certificate"
+msgstr "Instal sertifikat SSL"
+
+#: class-admin.php:2106
+msgid "No SSL detected. Use the retry button to check again."
+msgstr "SSL tidak terdeteksi. Gunakan tombol coba lagi untuk memeriksa kembali."
+
+#: onboarding/class-onboarding.php:383
+msgid "An SSL certificate has been detected"
+msgstr "Sertifikan SSL telah terdeteksi."
+
+#: lets-encrypt/class-letsencrypt-handler.php:296
+msgid "Your certificate will expire on %s."
+msgstr "Sertifikat Anda akan kedaluwarsa pada %s."
+
+#: lets-encrypt/class-letsencrypt-handler.php:306
+msgid "SSL certificate should be generated and installed."
+msgstr "Sertifikat SSL perlu dibuat dan diinstal."
+
+#: lets-encrypt/class-letsencrypt-handler.php:296
+msgid "Continue to renew."
+msgstr "Lanjutkan untuk perbaruan."
+
+#: class-site-health.php:31
+msgid "SSL Status Test"
+msgstr "Tes Status SSL"
+
+#: class-admin.php:2105 class-site-health.php:344
+msgid "No SSL detected"
+msgstr "Tidak ada SSL yang terdeteksi"
+
+#: class-site-health.php:329
+msgid "SSL is not enabled."
+msgstr "SSL tidak diaktifkan."
+
+#: class-site-health.php:361
+msgid "Enable 301 redirect"
+msgstr "Aktifkan pengalihan 310"
+
+#: class-site-health.php:356
+msgid "To ensure all traffic passes through SSL, please enable a 301 redirect."
+msgstr "Untuk memastikan kunjungan situs melewati SSL, mohon aktifkan pengalihan 301."
+
+#: class-site-health.php:353
+msgid "No 301 redirect to SSL enabled."
+msgstr "Tidak ada pengalihan 301 ke SSL yang diaktifkan."
+
+#: class-admin.php:1948
+msgid "Open"
+msgstr "Buka"
+
+#: class-admin.php:1947 settings/build/485.47f7474dc2a61c04262b.js:1
+#: settings/src/Settings/MixedContentScan/MixedContentScan.js:58
+msgid "Warning"
+msgstr "Peringatan"
+
+#: class-admin.php:1946
+msgid "Completed"
+msgstr "Lengkap"
+
+#: upgrade/upgrade-to-pro.php:156 settings/build/366.5ee9613565c0155c0f8e.js:1
+#: settings/src/Dashboard/OtherPlugins/OtherPlugins.js:24
+msgid "Installed"
+msgstr "Terpasang"
+
+#: onboarding/class-onboarding.php:313 onboarding/class-onboarding.php:320
+#: upgrade/upgrade-to-pro.php:132 upgrade/upgrade-to-pro.php:145
+#: settings/build/366.5ee9613565c0155c0f8e.js:1
+#: settings/src/Dashboard/OtherPlugins/OtherPluginsData.js:73
+msgid "Install"
+msgstr "Instal"
+
+#: class-admin.php:2242
+msgid "Your site uses Elementor. This can require some additional steps before getting the secure lock."
+msgstr "Situs Anda menggunakan Elementor. Perlu langkah tambahan sebelum Anda mendapatkan kunci keamanan."
+
+#: class-admin.php:2256
+msgid "Your site uses Divi. This can require some additional steps before getting the secure lock."
+msgstr "Situs Anda menggunakan Divi. Perlu langkah tambahan sebelum Anda mendapatkan kunci keamanan."
+
+#: class-site-health.php:107 class-site-health.php:138
+#: class-site-health.php:169 class-site-health.php:255
+#: class-site-health.php:297
+#: settings/config/fields/vulnerability-detection.php:234
+#: settings/build/366.5ee9613565c0155c0f8e.js:1
+#: settings/build/485.47f7474dc2a61c04262b.js:1
+#: settings/src/Dashboard/SslLabs/SslLabs.js:320
+#: settings/src/LetsEncrypt/DnsVerification.js:57
+msgid "Read more"
+msgstr "Baca lebih lanjut"
+
+#: class-site-health.php:340 settings/build/366.5ee9613565c0155c0f8e.js:1
+#: settings/build/485.47f7474dc2a61c04262b.js:1
+#: settings/build/829.0d69f68a1345874307b1.js:1
+#: settings/src/Dashboard/Progress/ProgressFooter.js:24
+#: settings/src/Onboarding/OnboardingControls.js:168
+msgid "Activate SSL"
+msgstr "Aktifkan SSL"
+
+#: class-admin.php:163 settings/build/index.c2ac76bdb7421daf20f4.js:1
+#: settings/src/Header.js:45
+msgid "Support"
+msgstr "Bantuan"
+
+#: class-admin.php:2084
+msgid "SSL is not enabled yet."
+msgstr "SSL belum diaktifkan."
+
+#: settings/config/menu.php:23 settings/config/menu.php:29
+#: settings/config/menu.php:386
+msgid "General"
+msgstr "Umum"
+
+#: progress/class-progress.php:93
+msgid "SSL is not yet enabled on this site."
+msgstr "SSL belum diaktifkan pada situs ini."
+
+#: class-admin.php:1792
+msgid "Don't show again"
+msgstr "Jangan ditampilkan lagi."
+
+#: class-admin.php:2161
+msgid "Error occurred when retrieving the webpage."
+msgstr "Terjadi kesalahan saat mengambil halaman web."
+
+#: class-site-health.php:365
+msgid "301 .htaccess redirect is not enabled."
+msgstr "301 .htaccess redirect tidak diaktifkan."
+
+#: class-site-health.php:312
+msgid "301 SSL redirect enabled"
+msgstr "301 SSL redirect diaktifkan."
+
+#: onboarding/class-onboarding.php:296
+#: settings/build/366.5ee9613565c0155c0f8e.js:1
+#: settings/src/Dashboard/Vulnerabilities/Vulnerabilities.js:116
+msgid "Enable"
+msgstr "Aktifkan"
+
+#: class-admin.php:661
+msgid "Dismiss"
+msgstr "Tutup"
+
+#: class-site-health.php:320
+msgid "You have set a 301 redirect to SSL. This is important for SEO purposes"
+msgstr "Anda telah mengatur pengalihan 301 ke SSL. Ini penting untuk kebutuhan SEO"
+
+#: class-site-health.php:368
+msgid "The 301 .htaccess redirect is the fastest and most reliable redirect option."
+msgstr "Pengalihan .htaccess 301 adalah pilihan pengalihan tercepat dan paling bisa diandalkan."
+
+#: class-admin.php:2051
+msgid "The 'force-deactivate.php' file has to be renamed to .txt. Otherwise your ssl can be deactivated by anyone on the internet."
+msgstr "File 'force-deactivate.php' harus diubah menjadi .txt. Jika tidak, ssl Anda dapat dinonaktifkan oleh siapa saja di internet."
+
+#: class-admin.php:1783
+msgid "Leave a review"
+msgstr "Tinggalkan ulasan"
+
+#: class-admin.php:1787
+msgid "Maybe later"
+msgstr "Mungkin nanti"
+
+#: class-multisite.php:128
+msgid "Activate SSL per site or install a wildcard certificate to fix this."
+msgstr "Aktifkan SSL per situs atau pasang sertifikat wildcard untuk memperbaiki ini."
+
+#: class-multisite.php:127
+msgid "This leads to issues when activating SSL networkwide since subdomains will be forced over SSL as well while they don't have a valid certificate."
+msgstr "Hal ini menyebabkan masalah ketika mengaktifkan SSL networkwide karena subdomain akan dipaksa melalui SSL juga sementara mereka tidak memiliki sertifikat yang valid."
+
+#: class-multisite.php:126
+msgid "You run a Multisite installation with subdomains, but your site doesn't have a wildcard certificate."
+msgstr "Anda menjalankan pemasangan Multisite dengan subdomain, tetapi situs Anda tidak memiliki sertifikat wildcard."
+
+#: upgrade/upgrade-to-pro.php:336 modal/build/433.ef6236b038b45328e4c7.js:1
+#: modal/src/components/Modal/RssslModal.js:68
+#: settings/build/485.47f7474dc2a61c04262b.js:1
+#: settings/build/829.0d69f68a1345874307b1.js:1
+#: settings/src/Settings/firewall/UserAgentModal.js:151
+#: settings/src/Settings/GeoBlockList/TrustIpAddressModal.js:140
+#: settings/src/Settings/LearningMode/ManualCspAdditionModal.js:190
+#: settings/src/Settings/LimitLoginAttempts/AddIpAddressModal.js:110
+#: settings/src/Settings/LimitLoginAttempts/AddUserModal.js:90
+msgid "Cancel"
+msgstr "Batal"
+
+#: class-admin.php:665 settings/build/366.5ee9613565c0155c0f8e.js:1
+#: settings/build/485.47f7474dc2a61c04262b.js:1
+#: settings/build/829.0d69f68a1345874307b1.js:1
+#: settings/build/995.7a0675fe0519b06656b3.js:1
+#: settings/src/Dashboard/TaskElement.js:65 settings/src/Settings/Help.js:24
+msgid "More info"
+msgstr "Info lebih lanjut"
+
+#: mailer/class-mail.php:33 mailer/class-mail.php:37
+#: settings/build/366.5ee9613565c0155c0f8e.js:1
+#: settings/src/Dashboard/Vulnerabilities/Vulnerabilities.js:192
+msgid "Learn more"
+msgstr "Pelajari lebih lanjut"
+
+#: class-site-health.php:373
+msgid "Enable 301 .htaccess redirect"
+msgstr "Aktifkan pengalihan .htaccess 301"
+
+#: class-admin.php:2191
+msgid "No 301 redirect is set. Enable the WordPress 301 redirect in the settings to get a 301 permanent redirect."
+msgstr "Pengalihan 301 belum diatur. Aktifkan pengalihan 301 WordPress di pengaturan untuk mendapatkan pengalihan permanen 301."
+
+#: class-multisite.php:112
+msgid "View settings page"
+msgstr "Lihat halaman pengaturan"
+
+#: settings/config/fields/general.php:210 settings/config/menu.php:51
+msgid "Premium Support"
+msgstr "Dukungan Khusus (Premium)"
+
+#: lets-encrypt/functions.php:376 lets-encrypt/functions.php:377
+#: settings/build/995.7a0675fe0519b06656b3.js:1
+#: settings/src/Settings/SettingsGroup.js:100
+msgid "Instructions"
+msgstr "Instruksi"
+
+#: class-admin.php:2080
+msgid "SSL is enabled on your site."
+msgstr "SSL telah diaktifkan pada situs Anda."
+
+#: class-admin.php:2014
+msgid "Your wp-config.php has to be edited, but is not writable."
+msgstr "wp-config.php perlu disunting, tetapi ia tidak dapat ditulis."
+
+#: onboarding/class-onboarding.php:15 security/hardening.php:9
+msgid "%s is a singleton class and you cannot create a second instance."
+msgstr "%s adalah singleton class dan Anda tidak dapat membuat instance kedua."
+
+#. Plugin URI of the plugin
+#: rlrsssl-really-simple-ssl.php
+msgid "https://really-simple-ssl.com"
+msgstr "https://really-simple-ssl.com"
+
+#: settings/config/fields/general.php:220
+msgid "Stop editing the .htaccess file"
+msgstr "Berhenti menyunting berkas .htaccess"
+
+#: settings/config/menu.php:208
+msgid "Configuration"
+msgstr "Konfigurasi"
+
+#: class-admin.php:156 class-admin.php:158 settings/config/menu.php:17
+#: settings/config/menu.php:394 settings/build/366.5ee9613565c0155c0f8e.js:1
+#: settings/src/Dashboard/Vulnerabilities/Vulnerabilities.js:237
+#: settings/src/Dashboard/Vulnerabilities/VulnerabilitiesFooter.js:24
+msgid "Settings"
+msgstr "Pengaturan"
+
+#: class-multisite.php:98
+msgid "Activate networkwide to fix this."
+msgstr "Aktifkan networkwide untuk memperbaiki ini."
+
+#: class-multisite.php:97
+msgid "Because the $_SERVER[\"HTTPS\"] variable is not set, your website may experience redirect loops."
+msgstr "Karena variabel $_SERVER[\"HTTPS\"] tidak ditetapkan, situs web Anda mungkin akan mengalami redirect loops."
+
+#: class-multisite.php:96
+msgid "You run a Multisite installation with subfolders, which prevents this plugin from fixing your missing server variable in the wp-config.php."
+msgstr "Anda menjalankan pemasangan Multisite dengan subfolder, yang mencegah plugin ini memperbaiki variabel server yang belum ada di wp-config.php."
+
+#: class-admin.php:2052 settings/build/485.47f7474dc2a61c04262b.js:1
+#: settings/build/829.0d69f68a1345874307b1.js:1
+#: settings/src/Onboarding/Items/ListItem.js:46
+msgid "Check again"
+msgstr "Periksa lagi"
