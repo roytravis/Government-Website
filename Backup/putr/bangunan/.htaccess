@@ -1,0 +1,32 @@
+# Mengaktifkan modul rewrite URL Apache
+RewriteEngine On
+
+# Menentukan direktori dasar untuk semua aturan
+RewriteBase /putr/bangunan/
+
+# --- PENGATURAN KEAMANAN ---
+# Mencegah orang melihat daftar file dalam direktori
+Options -Indexes
+
+# --- ATURAN-ATURAN REWRITE ---
+
+# Aturan Prioritas: Jika permintaan adalah untuk file atau direktori yang ada,
+# hentikan semua proses rewrite. Ini melindungi file seperti .css, .js, dan file API.
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Aturan 1: Mengalihkan URL yang mengandung .php ke versi bersihnya (untuk browser)
+# Contoh: /login.php -> /login
+RewriteCond %{THE_REQUEST} \s/+(.+?)\.php[\s?] [NC]
+RewriteRule ^ %1 [R=301,L]
+
+# Aturan 2: Menangani URL dengan ID (internal rewrite)
+# Contoh: /skpd/lihat_bangunan/86 -> /skpd/lihat_bangunan.php?id=86
+RewriteRule ^skpd/(lihat_bangunan|edit_bangunan|hapus_bangunan)/([0-9]+)/?$ skpd/$1.php?id=$2 [NC,L,QSA]
+# PERBAIKAN: Mengganti $2 menjadi $1 karena hanya ada satu grup penangkapan.
+RewriteRule ^admin/detail_verifikasi/([0-9]+)/?$ admin/detail_verifikasi.php?id=$1 [NC,L,QSA]
+
+# Aturan 3: Menangani URL bersih tanpa ID (aturan umum)
+# Contoh: /login -> /login.php
+RewriteRule ^(.+)$ $1.php [L,QSA]

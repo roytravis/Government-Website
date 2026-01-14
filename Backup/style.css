@@ -1,0 +1,159 @@
+/* Reset CSS dasar (jika belum ada) */
+body, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Styling untuk Header Utama */
+.site-header {
+    background-color: #ffffff;
+    padding: 15px 0;
+    border-bottom: 1px solid #eeeeee;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+}
+
+.site-header .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Styling untuk Logo */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 50px; /* Sesuaikan tinggi logo */
+    width: auto;
+    margin-right: 10px; /* Jika ada teks di samping logo */
+}
+
+/* Styling untuk Navigasi Utama */
+.main-navigation ul { /* Ini adalah UL level pertama (menu utama) */
+    list-style: none;
+    display: flex; /* Membuat item menu utama (Beranda, Profil, dll.) berjajar horizontal */
+}
+
+.main-navigation ul li { /* Item menu utama */
+    margin-left: 30px;
+    position: relative; /* Penting untuk positioning dropdown */
+}
+
+.main-navigation ul li a {
+    text-decoration: none;
+    color: #333333;
+    font-weight: 500;
+    padding: 10px 0;
+    display: block;
+    transition: color 0.2s ease-in-out;
+}
+
+.main-navigation ul li a:hover,
+.main-navigation ul li a:focus {
+    color: #007bff;
+}
+
+.arrow {
+    font-size: 0.7em;
+    margin-left: 6px;
+    color: #555555;
+}
+
+/* Styling untuk Dropdown Menu (UL yang menjadi submenu) */
+.dropdown-menu {
+    display: none; /* Awalnya disembunyikan */
+    position: absolute;
+    top: 100%; /* Muncul tepat di bawah item menu induk */
+    left: 0; /* Rata kiri dengan item menu induk */
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    z-index: 1000; /* Pastikan tampil di atas elemen lain */
+    min-width: 220px; /* Lebar minimum dropdown */
+    padding: 5px 0;
+    border-radius: 4px;
+    /* Pastikan dropdown TIDAK display: flex kecuali diatur flex-direction: column */
+    /* display: block; akan diatur oleh :hover di bawah */
+}
+
+/* Tampilkan dropdown-menu saat li.dropdown di-hover */
+.main-navigation ul li.dropdown:hover > .dropdown-menu {
+    display: block; /* Mengubah display dari none ke block untuk menampilkan */
+}
+
+/* Styling untuk item di dalam Dropdown Menu (LI di dalam submenu) */
+.dropdown-menu li {
+    display: block !important; /* Atau cukup display: block; jika tidak ada konflik kuat */
+    width: 100% !important;   /* Atau cukup width: 100%; */
+    margin-left: 0;
+}
+/* Styling untuk link di dalam item Dropdown Menu (A di dalam LI submenu) */
+.dropdown-menu li a {
+    display: block; /* PENTING: Membuat link mengambil lebar penuh dari LI induknya */
+    padding: 10px 20px; /* Padding untuk setiap item submenu */
+    color: #333333;
+    font-weight: normal;
+    white-space: nowrap; /* Agar teks tidak wrap jika terlalu panjang, bisa disesuaikan */
+    font-size: 0.95em;
+    /* Tidak perlu text-align: left; karena display:block sudah default rata kiri */
+}
+
+.dropdown-menu li a:hover,
+.dropdown-menu li a:focus {
+    background-color: #f5f5f5;
+    color: #0056b3;
+}
+
+/* Media Query untuk tampilan responsif (sederhana) */
+@media (max-width: 768px) {
+    .site-header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .main-navigation {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .main-navigation ul { /* UL utama di mobile */
+        flex-direction: column; /* Item menu utama ditumpuk vertikal */
+        width: 100%;
+    }
+
+    .main-navigation ul li {
+        margin-left: 0;
+        margin-bottom: 1px;
+        width: 100%;
+    }
+
+    .main-navigation ul li a {
+        padding: 12px 15px;
+        border-bottom: 1px solid #f0f0f0;
+    }
+    .main-navigation ul li:last-child a {
+        border-bottom: none;
+    }
+
+    .dropdown-menu { /* Submenu di mobile */
+        position: static; /* Hapus posisi absolut */
+        box-shadow: none;
+        border: none;
+        border-top: 1px solid #e0e0e0;
+        width: 100%; /* Lebar penuh */
+        padding-left: 20px; /* Sedikit indentasi untuk membedakan dari menu utama */
+        background-color: #f9f9f9;
+    }
+
+    .dropdown-menu li a {
+        padding: 10px 15px;
+    }
+    /* Pertimbangkan menggunakan JavaScript untuk toggle dropdown di mobile daripada hover */
+}

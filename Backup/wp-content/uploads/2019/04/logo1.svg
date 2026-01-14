@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg 
+					version="1.1" 
+					id="OBJECTS" 
+					xmlns="http://www.w3.org/2000/svg" 
+					xmlns:xlink="http://www.w3.org/1999/xlink" 
+					x="0px" 
+					y="0px"
+					width="63px"
+					height="63px"
+					viewBox="-272.4 366 62.5 61.9"
+					style="enable-background:new -272.4 366 62.5 61.9;"
+					xml:space="preserve">
+<style type="text/css">
+	.st0{opacity:0.4;fill:url(#SVGID_1_);enable-background:new    ;}
+	.st1{opacity:0.5;fill:url(#SVGID_2_);enable-background:new    ;}
+	.st2{opacity:0.6;fill:#6DC1EC;enable-background:new    ;}
+</style>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-208.3474" y1="388.3154" x2="-252.0402" y2="413.5413" gradientTransform="matrix(1 0 0 -1 0 797.92)">
+	<stop  offset="0" style="stop-color:#6D11CE"/>
+	<stop  offset="0" style="stop-color:#6DB3EA"/>
+	<stop  offset="0" style="stop-color:#6DA1E7"/>
+	<stop  offset="0" style="stop-color:#6D88E2"/>
+	<stop  offset="0" style="stop-color:#6D68DD"/>
+	<stop  offset="0" style="stop-color:#6D41D6"/>
+	<stop  offset="0" style="stop-color:#6DBEEB"/>
+	<stop  offset="3.903081e-03" style="stop-color:#6D13CE"/>
+	<stop  offset="0.7" style="stop-color:#6DC1EC"/>
+</linearGradient>
+<path class="st0" d="M-246.5,418.8c0,0,42.4,23,35-22.5c-7.1-43.5-28.5-27.9-39.9-12.5C-261.2,397.2-262.2,409.5-246.5,418.8z"/>
+<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="-239.3466" y1="369.4577" x2="-241.8782" y2="417.7633" gradientTransform="matrix(1 0 0 -1 0 797.92)">
+	<stop  offset="0" style="stop-color:#6D11CE"/>
+	<stop  offset="0" style="stop-color:#6DB3EA"/>
+	<stop  offset="0" style="stop-color:#6DA1E7"/>
+	<stop  offset="0" style="stop-color:#6D88E2"/>
+	<stop  offset="0" style="stop-color:#6D68DD"/>
+	<stop  offset="0" style="stop-color:#6D41D6"/>
+	<stop  offset="0" style="stop-color:#6DBEEB"/>
+	<stop  offset="0" style="stop-color:#6D13CE"/>
+	<stop  offset="0.8" style="stop-color:#6DC1EC"/>
+</linearGradient>
+<path class="st1" d="M-262.3,386.2c0,0,13.5-5.5,32.4-6.6c11.4-0.4,23.3-0.1,19.1,18c-4.5,19.4-10.4,27.4-17,30
+	c-6.6,2.6-23-6.6-29.6-12.2C-265.2,408.7-284,393.9-262.3,386.2z"/>
+<circle class="st2" cx="-256.4" cy="372.9" r="6.8"/>
+</svg>

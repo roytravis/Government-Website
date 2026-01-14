@@ -1,0 +1,26 @@
+
+# BEGIN WordPress
+# Arahan (baris) antara "BEGIN WordPress" dan "END WordPress"
+# dihasilkan secara dinamis, dan hanya dapat dimodifikasi melalui filter WordPress.
+# Setiap perubahan pada arahan di antara penanda berikut akan ditimpa.
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+RewriteBase /putr/
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /putr/index.php [L]
+</IfModule>
+
+# END WordPress
+
+# START: All in One SEO Sitemap Rewrite Rules
+# Do not make edits to these rules!
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+
+	RewriteRule sitemap(|[0-9]+)\.xml$ /index.php [L]
+	RewriteRule (default|video)-sitemap\.xsl /index.php [L]
+</IfModule>
+# END: All in One SEO Sitemap Rewrite Rules

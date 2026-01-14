@@ -1,0 +1,62 @@
+
+---Downloaded files---
+The import files for: Demo Import 1 were successfully downloaded!
+Initial max execution time = 180
+Files info:
+Site URL = http://localhost/wordpress
+Data file = C:\xampp\htdocs\wordpress/wp-content/uploads/2025/05/demo-content-import-file_2025-05-05__09-53-55.xml
+Widget file = C:\xampp\htdocs\wordpress/wp-content/uploads/2025/05/demo-widgets-import-file_2025-05-05__09-53-55.json
+Customizer file = not defined!
+Redux files:
+not defined!
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+---Importing widgets---
+Footer 1 : 
+
+Image - No Title - Imported
+Text - No Title - Imported
+
+Footer 2 : 
+
+Navigation Menu - Explore - Imported
+
+Footer 3 : 
+
+Navigation Menu - Pages - Imported
+
+Footer 4 : 
+
+Navigation Menu - Social - Imported
+
+
+
+---ocdi/after_import---
+
